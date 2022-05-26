@@ -38,6 +38,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 516345467
+    locked: 0
+  - name: Track
+    uniqueID: 2007577935
+    locked: 0
+  - name: TrailMark
+    uniqueID: 2855490845
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Smoke
+    uniqueID: 2871225757
     locked: 0
