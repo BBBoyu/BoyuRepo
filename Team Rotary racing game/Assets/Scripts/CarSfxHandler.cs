@@ -9,7 +9,7 @@ public class CarSfxHandler : MonoBehaviour
     public AudioMixer audioMixer;
 
     [Header("Audio sources")]
-    public AudioSource tiresScreeachingAudioSource;
+    public AudioSource tiresAudio;
     public AudioSource engineAudioSource;
     public AudioSource carHitAudioSource;
 
@@ -67,18 +67,18 @@ public class CarSfxHandler : MonoBehaviour
             //If the car is braking we want the tire screech to be louder and also change the pitch.
             if (isBraking)
             {
-                tiresScreeachingAudioSource.volume = Mathf.Lerp(tiresScreeachingAudioSource.volume, 1.0f, Time.deltaTime * 10);
+                tiresAudio.volume = Mathf.Lerp(tiresAudio.volume, 1.0f, Time.deltaTime * 10);
                 tireScreechPitch = Mathf.Lerp(tireScreechPitch, 0.5f, Time.deltaTime * 10);
             }
             else
             {
                 //If we are not braking we still want to play this screech sound if the player is drifting.
-                tiresScreeachingAudioSource.volume = Mathf.Abs(lateralVelocity) * 0.05f;
+                tiresAudio.volume = Mathf.Abs(lateralVelocity) * 0.05f;
                 tireScreechPitch = Mathf.Abs(lateralVelocity) * 0.1f;
             }
         }
         //Fade out the tire screech SFX if we are not screeching. 
-        else tiresScreeachingAudioSource.volume = Mathf.Lerp(tiresScreeachingAudioSource.volume, 0, Time.deltaTime * 10);
+        else tiresAudio.volume = Mathf.Lerp(tiresAudio.volume, 0, Time.deltaTime * 10);
     }
 
     void OnCollisionEnter2D(Collision2D collision2D)
