@@ -14453,7 +14453,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3875845376845694237, guid: 9620358e764dc4e49964c16e99fc6a56, type: 3}
       propertyPath: maxSpeed
-      value: 15
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 3875845376845694237, guid: 9620358e764dc4e49964c16e99fc6a56, type: 3}
+      propertyPath: driftFactor
+      value: 0.93
       objectReference: {fileID: 0}
     - target: {fileID: 3875845376845694237, guid: 9620358e764dc4e49964c16e99fc6a56, type: 3}
       propertyPath: accelerationFactor
