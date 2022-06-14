@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class LapManager : MonoBehaviour
 {
+    public static int count = 0;
     public float CurrentLapTime
     {
         get
         {
-            if(m_IsLapStarted == false )
+            if (count == 1)
+            {
+                return Time.realtimeSinceStartup - 4;
+            }
+            else if (count == 0)
             {
                 return 0f;
             }
-            return Time.realtimeSinceStartup - m_CurrentLapStartTime;
+            return Time.realtimeSinceStartup - 4 - m_CurrentLapStartTime;
         }
     }
 
@@ -31,7 +36,7 @@ public class LapManager : MonoBehaviour
     public float LastLaptTime { get; private set; }
     public float BestLaptTime { get; private set; }
 
-    public bool m_IsLapStarted = false; 
+    public bool m_IsLapStarted = false;
     public float m_CurrentLapStartTime;
 
     private void OnTriggerEnter2D(Collider2D otherCollider)
@@ -40,7 +45,7 @@ public class LapManager : MonoBehaviour
         {
             if (m_IsLapStarted == true)
             {
-                LastLaptTime = Time.realtimeSinceStartup - m_CurrentLapStartTime;
+                LastLaptTime = Time.realtimeSinceStartup - 4 - m_CurrentLapStartTime;
 
                 if (LastLaptTime < BestLaptTime || BestLaptTime == 0f)
                 {
@@ -48,7 +53,8 @@ public class LapManager : MonoBehaviour
                 }
             }
         }
+        count++;
         m_IsLapStarted = true;
-        m_CurrentLapStartTime = Time.realtimeSinceStartup;
+        m_CurrentLapStartTime = Time.realtimeSinceStartup - 4;
     }
 }

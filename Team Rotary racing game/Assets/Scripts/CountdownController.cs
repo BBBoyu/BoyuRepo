@@ -25,12 +25,13 @@ public class CountdownController : MonoBehaviour
         }
 
         countdownDisplay.text = "GO!";
-		
-		/* Call the code to "begin" your game here.
+
+        /* Call the code to "begin" your game here.
 		 * For example, mine allows the player to start
 		 * moving and starts the in game timer.
          */
-		// GameController.instance.BeginGame();
+        //GameController.instance.BeginGame();
+
 
         yield return new WaitForSeconds(1f);
 

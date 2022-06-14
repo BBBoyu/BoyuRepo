@@ -22,10 +22,11 @@ public class TopDownCarController : MonoBehaviour
     Rigidbody2D carRigidbody2D;
 
     //Awake is called when the script instance is being loaded.
-    void Awake()
+    public void Awake()
     {
         carRigidbody2D = GetComponent<Rigidbody2D>();
     }
+
 
     //Frame-rate independent for physics calculations.
     void FixedUpdate()

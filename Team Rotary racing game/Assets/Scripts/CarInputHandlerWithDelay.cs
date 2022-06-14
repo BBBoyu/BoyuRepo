@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CarInputHandler : MonoBehaviour
+public class CarInputHandlerWithDelay : MonoBehaviour
 {
     TopDownCarController CarController;
 
@@ -12,12 +12,20 @@ public class CarInputHandler : MonoBehaviour
     {
         //CarController = GetComponent<TopDownCarController>();
     }
-    
 
+    IEnumerator Start()
+    {
+        yield return new WaitForSeconds(3);
+        CarController = GetComponent<TopDownCarController>();
+    }
+
+    /*
     void Start()
     {
         CarController = GetComponent<TopDownCarController>();
+
     }
+    */
 
     // Updated every frame
     void Update()
