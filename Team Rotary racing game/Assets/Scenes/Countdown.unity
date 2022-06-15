@@ -14222,7 +14222,7 @@ MonoBehaviour:
   timeCounter: {fileID: 0}
   LapTimeInfoText: {fileID: 59244997}
   countdownText: {fileID: 796509101}
-  countdownTime: 3
+  countdownTime: 5
 --- !u!1 &775035979
 GameObject:
   m_ObjectHideFlags: 0
