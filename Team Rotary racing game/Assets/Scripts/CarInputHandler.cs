@@ -22,13 +22,23 @@ public class CarInputHandler : MonoBehaviour
     // Updated every frame
     void Update()
     {
-        Vector2 inputVector = Vector2.zero;
 
-        //Get input from Unity's input system.
-        inputVector.x = Input.GetAxis("Horizontal");
-        inputVector.y = Input.GetAxis("Vertical");
+        if (GameController__update.instance.gamePlaying)
+        {
+            Vector2 inputVector = Vector2.zero;
 
-        //Send the input to the car controller.
-        CarController.SetInputVector(inputVector);
+            //Get input from Unity's input system.
+            inputVector.x = Input.GetAxis("Horizontal");
+            inputVector.y = Input.GetAxis("Vertical");
+
+            //Send the input to the car controller.
+            CarController.SetInputVector(inputVector);
+        }
+        else
+        {
+            Vector2 inputVector = Vector2.zero;
+            CarController.SetInputVector(inputVector);
+
+        }
     }
 }
