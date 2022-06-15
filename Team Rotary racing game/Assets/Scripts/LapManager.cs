@@ -11,13 +11,13 @@ public class LapManager : MonoBehaviour
         {
             if (count == 1)
             {
-                return Time.realtimeSinceStartup - 4;
+                return Time.realtimeSinceStartup - 6;
             }
             else if (count == 0)
             {
                 return 0f;
             }
-            return Time.realtimeSinceStartup - 4 - m_CurrentLapStartTime;
+            return Time.realtimeSinceStartup - 6 - m_CurrentLapStartTime;
         }
     }
 
@@ -29,7 +29,7 @@ public class LapManager : MonoBehaviour
             {
                 return 0f;
             }
-            return Time.realtimeSinceStartup - 4;
+            return Time.realtimeSinceStartup - 6;
         }
     }
 
@@ -45,7 +45,7 @@ public class LapManager : MonoBehaviour
         {
             if (m_IsLapStarted == true)
             {
-                LastLaptTime = Time.realtimeSinceStartup - 4 - m_CurrentLapStartTime;
+                LastLaptTime = Time.realtimeSinceStartup - 6 - m_CurrentLapStartTime;
 
                 if (LastLaptTime < BestLaptTime || BestLaptTime == 0f)
                 {
@@ -55,6 +55,6 @@ public class LapManager : MonoBehaviour
         }
         count++;
         m_IsLapStarted = true;
-        m_CurrentLapStartTime = Time.realtimeSinceStartup - 4;
+        m_CurrentLapStartTime = Time.realtimeSinceStartup - 6;
     }
 }
