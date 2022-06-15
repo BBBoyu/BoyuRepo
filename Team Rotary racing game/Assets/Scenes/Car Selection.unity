@@ -237,8 +237,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2183594373283191158}
+  m_Children: []
   m_Father: {fileID: 6102319385621887202}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -785,127 +784,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4339237227615835981}
   m_CullTransparentMesh: 0
---- !u!1001 &2183594373283191157
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 568552948}
-    m_Modifications:
-    - target: {fileID: 1015473318309742409, guid: 5baa6a05a122148cc8b58edf987324fe, type: 3}
-      propertyPath: m_Name
-      value: CarUI Object Prefab
-      objectReference: {fileID: 0}
-    - target: {fileID: 6952455884357154899, guid: 5baa6a05a122148cc8b58edf987324fe, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6952455884357154899, guid: 5baa6a05a122148cc8b58edf987324fe, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6952455884357154899, guid: 5baa6a05a122148cc8b58edf987324fe, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6952455884357154899, guid: 5baa6a05a122148cc8b58edf987324fe, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6952455884357154899, guid: 5baa6a05a122148cc8b58edf987324fe, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6952455884357154899, guid: 5baa6a05a122148cc8b58edf987324fe, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6952455884357154899, guid: 5baa6a05a122148cc8b58edf987324fe, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6952455884357154899, guid: 5baa6a05a122148cc8b58edf987324fe, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 6952455884357154899, guid: 5baa6a05a122148cc8b58edf987324fe, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 136
-      objectReference: {fileID: 0}
-    - target: {fileID: 6952455884357154899, guid: 5baa6a05a122148cc8b58edf987324fe, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6952455884357154899, guid: 5baa6a05a122148cc8b58edf987324fe, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6952455884357154899, guid: 5baa6a05a122148cc8b58edf987324fe, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6952455884357154899, guid: 5baa6a05a122148cc8b58edf987324fe, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6952455884357154899, guid: 5baa6a05a122148cc8b58edf987324fe, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6952455884357154899, guid: 5baa6a05a122148cc8b58edf987324fe, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6952455884357154899, guid: 5baa6a05a122148cc8b58edf987324fe, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6952455884357154899, guid: 5baa6a05a122148cc8b58edf987324fe, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6952455884357154899, guid: 5baa6a05a122148cc8b58edf987324fe, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 3.0499687
-      objectReference: {fileID: 0}
-    - target: {fileID: 6952455884357154899, guid: 5baa6a05a122148cc8b58edf987324fe, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6952455884357154899, guid: 5baa6a05a122148cc8b58edf987324fe, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6952455884357154899, guid: 5baa6a05a122148cc8b58edf987324fe, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 5baa6a05a122148cc8b58edf987324fe, type: 3}
---- !u!224 &2183594373283191158 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 6952455884357154899, guid: 5baa6a05a122148cc8b58edf987324fe, type: 3}
-  m_PrefabInstance: {fileID: 2183594373283191157}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2183594373283191159 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1015473318309742409, guid: 5baa6a05a122148cc8b58edf987324fe, type: 3}
-  m_PrefabInstance: {fileID: 2183594373283191157}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2183594373283191160
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2183594373283191159}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8528fe8204695bc42a9dc4faa35ace28, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  carPrefab: {fileID: 0}
-  spawnOnTransform: {fileID: 0}
 --- !u!224 &2234313692286463351
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1236,6 +1114,7 @@ GameObject:
   - component: {fileID: 1997270527713101724}
   - component: {fileID: 3996592731420390444}
   - component: {fileID: 3127461225120522015}
+  - component: {fileID: 6102319385621887203}
   m_Layer: 5
   m_Name: Car Selection
   m_TagString: Untagged
@@ -1419,6 +1298,20 @@ RectTransform:
   m_AnchoredPosition: {x: 5, y: -20}
   m_SizeDelta: {x: 300, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &6102319385621887203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4048161825381465106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8528fe8204695bc42a9dc4faa35ace28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carPrefab: {fileID: 1015473318309742409, guid: 5baa6a05a122148cc8b58edf987324fe, type: 3}
+  spawnOnTransform: {fileID: 568552948}
 --- !u!222 &6408905487343852192
 CanvasRenderer:
   m_ObjectHideFlags: 0

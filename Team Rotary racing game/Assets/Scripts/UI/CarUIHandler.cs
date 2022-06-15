@@ -31,15 +31,15 @@ public class CarUIHandler : MonoBehaviour
     public void StartCarEntranceAnimation(bool isAppearingOnRightSide)
     {
         if (isAppearingOnRightSide)
-            animator.Play("Car UI Appear From Right");
-        else animator.Play("Car UI Appear From Left");
+            animator.Play("CarUI from Right");
+        else animator.Play("CarUI from Left");
     }
 
     public void StartCarExitAnimation(bool isExitingOnRightSide)
     {
         if (isExitingOnRightSide)
-            animator.Play("Car UI Disappear To Right");
-        else animator.Play("Car UI Disappear To Left");
+            animator.Play("CarUI to Right");
+        else animator.Play("CarUI to Left");
     }
 
     //Events
