@@ -368,7 +368,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Speed Demon
+  m_Text: SPEED DEMON
 --- !u!222 &1897193523
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -453,7 +453,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1018669740530211503}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: 
           m_MethodName: OnBrakePress
           m_Mode: 1
@@ -469,7 +469,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1018669740530211503}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: 
           m_MethodName: OnAccelerateBrakRelease
           m_Mode: 1
@@ -485,7 +485,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1018669740530211503}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: 
           m_MethodName: OnBrakePress
           m_Mode: 1
@@ -501,7 +501,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1018669740530211503}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: 
           m_MethodName: OnAccelerateBrakRelease
           m_Mode: 1
@@ -539,18 +539,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1018669740530211503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2576364914840790414}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46ad37505467e254c8d0660a56b7cd77, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1136214088759459225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -856,7 +844,6 @@ GameObject:
   - component: {fileID: 8325985850267290471}
   - component: {fileID: 4151093053966362890}
   - component: {fileID: 1459176817080555136}
-  - component: {fileID: 1018669740530211503}
   m_Layer: 5
   m_Name: Canvas - Car Selection
   m_TagString: Untagged
@@ -1375,7 +1362,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1018669740530211503}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: 
           m_MethodName: OnSteerLeftPress
           m_Mode: 1
@@ -1391,7 +1378,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1018669740530211503}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: 
           m_MethodName: OnSteerRelease
           m_Mode: 1
@@ -1407,7 +1394,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1018669740530211503}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: 
           m_MethodName: OnSteerLeftPress
           m_Mode: 1
@@ -1423,7 +1410,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1018669740530211503}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: 
           m_MethodName: OnSteerRelease
           m_Mode: 1
@@ -1452,7 +1439,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1018669740530211503}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: 
           m_MethodName: OnSteerRightPress
           m_Mode: 1
@@ -1468,7 +1455,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1018669740530211503}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: 
           m_MethodName: OnSteerRelease
           m_Mode: 1
@@ -1484,7 +1471,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1018669740530211503}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: 
           m_MethodName: OnSteerRightPress
           m_Mode: 1
@@ -1500,7 +1487,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1018669740530211503}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: 
           m_MethodName: OnSteerRelease
           m_Mode: 1
@@ -1843,7 +1830,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1018669740530211503}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: 
           m_MethodName: OnAcceleratePress
           m_Mode: 1
@@ -1859,7 +1846,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1018669740530211503}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: 
           m_MethodName: OnAccelerateBrakRelease
           m_Mode: 1
@@ -1875,7 +1862,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1018669740530211503}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: 
           m_MethodName: OnAcceleratePress
           m_Mode: 1
@@ -1891,7 +1878,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1018669740530211503}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: 
           m_MethodName: OnAccelerateBrakRelease
           m_Mode: 1
