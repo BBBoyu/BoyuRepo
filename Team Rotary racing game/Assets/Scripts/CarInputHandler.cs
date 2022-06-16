@@ -5,9 +5,10 @@ using UnityEngine;
 public class CarInputHandler : MonoBehaviour
 {
     TopDownCarController CarController;
+    public int playerNumber = 1;
 
     //Awake as soon as loaded
-    
+
     void Awake()
     {
         //CarController = GetComponent<TopDownCarController>();
