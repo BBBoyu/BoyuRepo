@@ -38,6 +38,15 @@ public class CarSfxHandler : MonoBehaviour
     {
         UpdateEngineSFX();
         UpdateTiresScreechingSFX();
+
+        if (PauseMenu.GameIsPaused)
+        {
+            audioMixer.SetFloat("SFXVolume", -80f);
+        }
+        else
+        {
+            audioMixer.SetFloat("SFXVolume", 0f);
+        }
     }
 
     void UpdateEngineSFX()
