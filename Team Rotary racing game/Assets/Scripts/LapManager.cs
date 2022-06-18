@@ -11,13 +11,13 @@ public class LapManager : MonoBehaviour
         {
             if (count == 1)
             {
-                return Time.realtimeSinceStartup - 6;
+                return Time.time - m_CurrentLapStartTime;
             }
             else if (count == 0)
             {
                 return 0f;
             }
-            return Time.realtimeSinceStartup - 6 - m_CurrentLapStartTime;
+            return Time.time - m_CurrentLapStartTime;
         }
     }
 
@@ -29,7 +29,7 @@ public class LapManager : MonoBehaviour
             {
                 return 0f;
             }
-            return Time.realtimeSinceStartup - 6;
+            return Time.time - m_StartTime;
         }
     }
 
@@ -38,6 +38,7 @@ public class LapManager : MonoBehaviour
 
     public bool m_IsLapStarted = false;
     public float m_CurrentLapStartTime;
+    public float m_StartTime;
 
     private void OnTriggerEnter2D(Collider2D otherCollider)
     {
@@ -45,7 +46,7 @@ public class LapManager : MonoBehaviour
         {
             if (m_IsLapStarted == true)
             {
-                LastLaptTime = Time.realtimeSinceStartup - 6 - m_CurrentLapStartTime;
+                LastLaptTime = Time.time - m_CurrentLapStartTime;
 
                 if (LastLaptTime < BestLaptTime || BestLaptTime == 0f)
                 {
@@ -55,6 +56,19 @@ public class LapManager : MonoBehaviour
         }
         count++;
         m_IsLapStarted = true;
-        m_CurrentLapStartTime = Time.realtimeSinceStartup - 6;
+        m_CurrentLapStartTime = Time.time;
+
+        if (count == 1)
+        {
+            m_StartTime = Time.time;
+        }
+    }
+
+    private void Update()
+    {
+        if (PauseMenu.GameIsPaused)
+        {
+            m_CurrentLapStartTime -= Time.deltaTime;
+        }
     }
 }

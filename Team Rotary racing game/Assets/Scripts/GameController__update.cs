@@ -52,6 +52,7 @@ public class GameController__update : MonoBehaviour
             + "Total Time: " + SecondsToTime(m_LapManager.TotalTime);
     }
 
+
     string SecondsToTime(float seconds)
     {
         int Minutes = Mathf.FloorToInt(seconds / 60f);

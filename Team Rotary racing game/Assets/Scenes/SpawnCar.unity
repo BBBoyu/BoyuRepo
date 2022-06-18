@@ -14326,6 +14326,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_IsLapStarted: 0
   m_CurrentLapStartTime: 0
+  m_StartTime: 0
 --- !u!4 &474399781
 Transform:
   m_ObjectHideFlags: 0
@@ -14832,7 +14833,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1032307046}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -27.76, y: -15.25, z: 1.5045092}
+  m_LocalPosition: {x: -27.76, y: -16, z: 1.5045092}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
