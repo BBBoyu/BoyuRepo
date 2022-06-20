@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class Checkpoint : MonoBehaviour
 {
     public int Index;
 
@@ -25,7 +25,7 @@ public class NewBehaviourScript : MonoBehaviour
     {
         if (otherCollider.CompareTag("Car") == true)
         {
-            LapManager1.OnCheckpointPassed(Index);
+            //LapManager1.OnCheckpointPassed(Index);
         }
     }
 
