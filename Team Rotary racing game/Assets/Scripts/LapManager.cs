@@ -71,4 +71,9 @@ public class LapManager : MonoBehaviour
             m_CurrentLapStartTime -= Time.deltaTime;
         }
     }
+
+    public void OnCheckpointPassed(int Index)
+    {
+
+    }
 }

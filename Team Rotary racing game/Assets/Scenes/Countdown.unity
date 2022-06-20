@@ -212,9 +212,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Current Lap:
 
-    Last Lap:
-
-    Best Lap:
+    Total Time:
 
 '
 --- !u!222 &59244998
@@ -14191,6 +14189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_IsLapStarted: 0
   m_CurrentLapStartTime: 0
+  m_StartTime: 0
 --- !u!4 &474399781
 Transform:
   m_ObjectHideFlags: 0
