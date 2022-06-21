@@ -25,10 +25,12 @@ public class Checkpoint : MonoBehaviour
     {
         if (otherCollider.CompareTag("Car") == true)
         {
-            //LapManager1.OnCheckpointPassed(Index);
+            //Debug.Log("Checkpoint " + Index);
+            LapManager1.OnCheckpointPassed(Index);
         }
     }
 
+    /*
     private void Update()
     {
         if (PauseMenu.GameIsPaused)
@@ -36,4 +38,5 @@ public class Checkpoint : MonoBehaviour
             //m_CurrentLapStartTime -= Time.deltaTime;
         }
     }
+    */
 }

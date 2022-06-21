@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LapManager : MonoBehaviour
 {
-    public static int count = 0;
+    public int count = 0;
     public float CurrentLapTime
     {
         get
@@ -42,7 +42,7 @@ public class LapManager : MonoBehaviour
     int LastCheckpointIndex = 0;
     public int CheckPointCount;
 
-    /*
+    
     private void Start() {
         CheckPointCount = GetCheckPointCount();
     }
@@ -58,8 +58,9 @@ public class LapManager : MonoBehaviour
         }
         return checkpointcount;
     }
-    */
+    
 
+    /*
     void OnTriggerEnter2D(Collider2D otherCollider)
     {
         if (otherCollider.CompareTag("Car") == true)
@@ -83,6 +84,7 @@ public class LapManager : MonoBehaviour
             m_StartTime = Time.time;
         }
     }
+    */
 
     void Update()
     {
@@ -92,7 +94,7 @@ public class LapManager : MonoBehaviour
         }
     }
 
-    /*
+    
 
     public void OnCheckpointPassed(int index)
     {
@@ -100,6 +102,7 @@ public class LapManager : MonoBehaviour
             {
                 if (LastCheckpointIndex == CheckPointCount || m_IsLapStarted == false )
                 {
+                    //Debug.Log("Checkpoint " + index);
                     OnFinishLineePassed();
                 }
             }
@@ -108,6 +111,7 @@ public class LapManager : MonoBehaviour
         {
             if (index == LastCheckpointIndex +1)
             {
+                //Debug.Log("Checkpoint " + index);
                 LastCheckpointIndex = index;
             }
         }
@@ -135,5 +139,5 @@ public class LapManager : MonoBehaviour
             m_StartTime = Time.time;
         }
     }
-    */
+    
 }

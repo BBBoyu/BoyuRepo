@@ -49,6 +49,7 @@ public class GameController__update : MonoBehaviour
     void UpdateLapTimeInfoText()
     {
         LapTimeInfoText.text = "Current Lap: " + SecondsToTime(m_LapManager.CurrentLapTime) + "\n"
+            + "Lap Count: " + m_LapManager.count + "\n"
             + "Total Time: " + SecondsToTime(m_LapManager.TotalTime);
     }
 
