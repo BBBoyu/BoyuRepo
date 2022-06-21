@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CarSelectionButtons
+  m_Controller: {fileID: 9100000, guid: c53a72670719c0a448c255b8ee98fc02, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 346336eab7a888f4a89111190b743617, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: a68053b2234dc2e458b26236dc6b5500, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: f565b33d66c95d942b21160de78d65b9, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 5f601138408b59c46a2529e29e7e72ef, type: 2}

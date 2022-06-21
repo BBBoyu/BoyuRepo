@@ -86,6 +86,11 @@ public class SelectCarUIHandler : MonoBehaviour
         SceneManager.LoadScene("SpawnCar");
     }
 
+    public void LoadPreviousScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+    }
+
     IEnumerator SpawnCarCO(bool isCarAppearingOnRightSide)
     {
         isChangingCar = true;
