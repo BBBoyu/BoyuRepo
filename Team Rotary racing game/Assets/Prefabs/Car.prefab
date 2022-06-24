@@ -5538,7 +5538,7 @@ MonoBehaviour:
   driftFactor: 0.93
   accelerationFactor: 30
   turnFactor: 3.5
-  maxSpeed: 20
+  maxSpeed: 18
 --- !u!114 &3875845376845694226
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -9878,8 +9878,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   driftFactor: 0.93
-  accelerationFactor: 30
-  turnFactor: 3.5
+  accelerationFactor: 25
+  turnFactor: 5
   maxSpeed: 20
 --- !u!114 &1885617648268214315
 MonoBehaviour:
@@ -9910,7 +9910,7 @@ MonoBehaviour:
   tiresAudio: {fileID: 1885617649083662009}
   engineAudioSource: {fileID: 1885617649361952407}
   carHitAudioSource: {fileID: 1885617648955957719}
-  maxEnginePitch: 2
+  maxEnginePitch: 2.5
 --- !u!50 &1885617648268214314
 Rigidbody2D:
   serializedVersion: 4
