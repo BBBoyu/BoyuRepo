@@ -138,12 +138,12 @@ public class LapManager : MonoBehaviour
         LastCheckpointIndex = 0;
         //m_StartTime = Time.time;
 
-        /*
-        if (count == 1)
+        
+        /*if (count == 1)
         {
             m_StartTime = Time.time;
-        }
-        */
+        }*/
+        
     }
     
 }
