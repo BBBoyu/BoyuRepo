@@ -9910,6 +9910,7 @@ MonoBehaviour:
   tiresAudio: {fileID: 8798118098987943420}
   engineAudioSource: {fileID: 8798118099181577682}
   carHitAudioSource: {fileID: 8798118098783705746}
+  maxEnginePitch: 3
 --- !u!50 &8798118098196904815
 Rigidbody2D:
   serializedVersion: 4

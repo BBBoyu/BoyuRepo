@@ -16,6 +16,7 @@ public class CarSfxHandler : MonoBehaviour
     //Local variables
     float desiredEnginePitch = 0.5f;
     float tireScreechPitch = 0.5f;
+    public float maxEnginePitch = 2f;
 
     //Components
     TopDownCarController topDownCarController;
@@ -64,7 +65,7 @@ public class CarSfxHandler : MonoBehaviour
 
         //To add more variation to the engine sound we also change the pitch
         desiredEnginePitch = velocityMagnitude * 0.2f;
-        desiredEnginePitch = Mathf.Clamp(desiredEnginePitch, 0.5f, 2f);
+        desiredEnginePitch = Mathf.Clamp(desiredEnginePitch, 0.5f, maxEnginePitch);
         engineAudioSource.pitch = Mathf.Lerp(engineAudioSource.pitch, desiredEnginePitch, Time.deltaTime * 1.5f);
     }
 

@@ -4,19 +4,31 @@ using UnityEngine;
 
 public class LapManager : MonoBehaviour
 {
+
+    private void Awake()
+    {
+        m_StartTime = Time.timeSinceLevelLoad + 3;
+    }
+
+    public float m_StartTime;
+    public float SinceStartTime;
+
     public int count = 0;
     public float CurrentLapTime
     {
         get
         {
-            if (count == 1)
+            if (count <= 1)
             {
-                return Time.time - m_CurrentLapStartTime;
+                return TotalTime;
+                //return Time.time - m_StartTime;
             }
-            else if (count == 0)
+            
+			else if (Time.time - m_StartTime < 0)
             {
                 return 0f;
             }
+            
             return Time.time - m_CurrentLapStartTime;
         }
     }
@@ -25,20 +37,21 @@ public class LapManager : MonoBehaviour
     {
         get
         {
-            if (m_IsLapStarted == false)
+            if (Time.time - m_StartTime < 0)
             {
                 return 0f;
             }
-            return Time.time - m_StartTime;
+           return Time.time - m_StartTime;
         }
     }
 
-    public float LastLaptTime { get; private set; }
-    public float BestLaptTime { get; private set; }
+    //public float LastLaptTime { get; private set; }
+    //public float BestLaptTime { get; private set; }
+
 
     public bool m_IsLapStarted = false;
     public float m_CurrentLapStartTime;
-    public float m_StartTime;
+    //public float m_StartTime = Time.timeSinceLevelLoad;
     int LastCheckpointIndex = 0;
     public int CheckPointCount;
 
@@ -102,7 +115,7 @@ public class LapManager : MonoBehaviour
             {
                 if (LastCheckpointIndex == CheckPointCount || m_IsLapStarted == false )
                 {
-                    //Debug.Log("Checkpoint " + index);
+                    Debug.Log("Checkpoint " + index);
                     OnFinishLineePassed();
                 }
             }
@@ -111,7 +124,7 @@ public class LapManager : MonoBehaviour
         {
             if (index == LastCheckpointIndex +1)
             {
-                //Debug.Log("Checkpoint " + index);
+                Debug.Log("Checkpoint " + index);
                 LastCheckpointIndex = index;
             }
         }
