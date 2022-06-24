@@ -37,7 +37,7 @@ public class LapManager : MonoBehaviour
     {
         get
         {
-            if (Time.time - m_StartTime < 0)
+            if (count == 0)
             {
                 return 0f;
             }
@@ -152,10 +152,10 @@ public class LapManager : MonoBehaviour
         //m_StartTime = Time.time;
 
         
-        /*if (count == 1)
+        if (count == 1)
         {
             m_StartTime = Time.time;
-        }*/
+        }
         
     }
     
