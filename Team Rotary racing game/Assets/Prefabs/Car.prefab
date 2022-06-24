@@ -541,7 +541,7 @@ GameObject:
   - component: {fileID: 3875845376550388559}
   m_Layer: 0
   m_Name: Sprite
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5501,7 +5501,7 @@ GameObject:
   - component: {fileID: 3875845376845694227}
   m_Layer: 0
   m_Name: Car
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5551,6 +5551,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75d226f4939f54e52839890c6c1500b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerNumber: 1
 --- !u!114 &3875845376845694239
 MonoBehaviour:
   m_ObjectHideFlags: 0
