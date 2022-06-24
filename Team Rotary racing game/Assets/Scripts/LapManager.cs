@@ -11,13 +11,13 @@ public class LapManager : MonoBehaviour
         {
             if (count == 1)
             {
-                return Time.time - m_CurrentLapStartTime - 4;
+                return Time.time - m_CurrentLapStartTime;
             }
             else if (count == 0)
             {
                 return 0f;
             }
-            return Time.time - m_CurrentLapStartTime - 4;
+            return Time.time - m_CurrentLapStartTime;
         }
     }
 
@@ -29,7 +29,7 @@ public class LapManager : MonoBehaviour
             {
                 return 0f;
             }
-            return Time.time - m_StartTime - 4;
+            return Time.time - m_StartTime;
         }
     }
 
