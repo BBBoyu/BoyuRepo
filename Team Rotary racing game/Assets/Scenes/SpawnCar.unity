@@ -14382,6 +14382,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd40a291bafcd42b783d8cfefbeaf93e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  count: 0
   m_IsLapStarted: 0
   m_CurrentLapStartTime: 0
   m_StartTime: 0
