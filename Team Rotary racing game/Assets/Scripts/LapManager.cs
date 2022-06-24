@@ -120,7 +120,6 @@ public class LapManager : MonoBehaviour
 
     void OnFinishLineePassed()
     {
-        /*
         if (m_IsLapStarted == true)
         {
             LastLaptTime = Time.time - m_CurrentLapStartTime;
@@ -130,20 +129,15 @@ public class LapManager : MonoBehaviour
                 BestLaptTime = LastLaptTime;
             }
         }
-        */
 
         count++;
         m_IsLapStarted = true;
         m_CurrentLapStartTime = Time.time;
-        LastCheckpointIndex = 0;
-        //m_StartTime = Time.time;
 
-        /*
         if (count == 1)
         {
             m_StartTime = Time.time;
         }
-        */
     }
     
 }
