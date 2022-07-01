@@ -3,10 +3,32 @@
 [CreateAssetMenu (fileName ="New Map", menuName ="Map")]
 public class MapData : ScriptableObject
 {
-    public int mapIndex;
+    /*
     public string mapName;
     public string mapDescription;
-    //public Color nameColor;
-    public Sprite mapImage;
+    */
+
     public string sceneToLoad;
+    public Sprite MapImage;
+    public int MapIndex;
+
+    /*
+
+    [SerializeField]
+    private int mapIndex = 0;
+
+    [SerializeField]
+    private Sprite mapImage;
+
+    public int MapIndex
+    {
+        get { return mapIndex; }
+    }
+    public Sprite MapImage
+    {
+        get { return mapImage; }
+    }
+    */
+
+
 }

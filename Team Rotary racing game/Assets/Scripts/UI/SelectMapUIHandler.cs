@@ -18,13 +18,14 @@ public class SelectMapUIHandler : MonoBehaviour
     int selectedMapIndex = 0;
 
     //Other components
-    //MapUIHandler mapUIHandler = null;
+    MapUIHandler mapUIHandler = null;
 
     // Start is called before the first frame update
     void Start()
     {
         //Load the car data
         mapDatas = Resources.LoadAll<MapData>("MapData/");
+        Debug.Log(mapDatas.Length);
 
         StartCoroutine(SpawnMapCO(true));
     }
@@ -71,19 +72,16 @@ public class SelectMapUIHandler : MonoBehaviour
             selectedMapIndex = 0;
 
         StartCoroutine(SpawnMapCO(false));
+
     }
 
     public void OnSelectMap()
     {
-        PlayerPrefs.SetInt("P1SelectedMapID", mapDatas[selectedMapIndex].mapIndex);
-        //Multiple player input selection
-        //PlayerPrefs.SetInt("P2SelectedCarID", carDatas[selectedCarIndex].CarUniqueID);
-        //PlayerPrefs.SetInt("P3SelectedCarID", carDatas[selectedCarIndex].CarUniqueID);
-        //PlayerPrefs.SetInt("P4SelectedCarID", carDatas[selectedCarIndex].CarUniqueID);
+        PlayerPrefs.SetInt("P1SelectedMapID", mapDatas[selectedMapIndex].MapIndex);
 
         PlayerPrefs.Save();
 
-        SceneManager.LoadScene("SpawnCar");
+        SceneManager.LoadScene("Car Selection");
     }
 
     public void LoadPreviousScene()
@@ -96,22 +94,25 @@ public class SelectMapUIHandler : MonoBehaviour
     
     IEnumerator SpawnMapCO(bool isCarAppearingOnRightSide)
     {
-        /*
+        
         isChangingMap = true;
 
-        if (carUIHandler != null)
-            carUIHandler.StartCarExitAnimation(!isCarAppearingOnRightSide);
+        if (mapUIHandler != null)
+            mapUIHandler.StartMapExitAnimation(!isCarAppearingOnRightSide);
 
-        GameObject instantiatedCar = Instantiate(mapPrefab, spawnOnTransform);
+        
+        GameObject instantiatedMap = Instantiate(mapPrefab, spawnOnTransform);
 
-        carUIHandler = instantiatedCar.GetComponent<CarUIHandler>();
-        carUIHandler.SetupCar(carDatas[selectedCarIndex]);
-        carUIHandler.StartCarEntranceAnimation(isCarAppearingOnRightSide);
+        mapUIHandler = instantiatedMap.GetComponent<MapUIHandler>();
+        
+
+        mapUIHandler.SetupMap(mapDatas[selectedMapIndex]);
+        mapUIHandler.StartMapEntranceAnimation(isCarAppearingOnRightSide);
 
         yield return new WaitForSeconds(0.4f);
-        isChangingCar = false;
+        isChangingMap = false;
 
-        */
+
     }
     
     

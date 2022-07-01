@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SpawnCar.unity
     guid: 0f1c00f3c5aa14c78b432a354c179b3c
+  - enabled: 1
+    path: Assets/Scenes/Track Selection.unity
+    guid: c2a0acc1be21240b0b20271e57306a23
   m_configObjects: {}
