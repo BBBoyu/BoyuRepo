@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 [CreateAssetMenu (fileName ="New Map", menuName ="Map")]
-public class Map : ScriptableObject
+public class MapData : ScriptableObject
 {
     public int mapIndex;
     public string mapName;
