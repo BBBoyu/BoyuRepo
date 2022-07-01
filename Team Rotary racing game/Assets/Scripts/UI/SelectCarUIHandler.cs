@@ -83,7 +83,7 @@ public class SelectCarUIHandler : MonoBehaviour
 
         PlayerPrefs.Save();
 
-        SceneManager.LoadScene("SpawnCar");
+        SceneManager.LoadScene(SelectMapUIHandler.mapToLoad);
     }
 
     public void LoadPreviousScene()

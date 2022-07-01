@@ -13,6 +13,8 @@ public class SelectMapUIHandler : MonoBehaviour
 
     bool isChangingMap = false;
 
+    public static string mapToLoad;
+
     MapData[] mapDatas;
 
     int selectedMapIndex = 0;
@@ -80,7 +82,7 @@ public class SelectMapUIHandler : MonoBehaviour
         PlayerPrefs.SetInt("P1SelectedMapID", mapDatas[selectedMapIndex].MapIndex);
 
         PlayerPrefs.Save();
-
+        mapToLoad = mapDatas[selectedMapIndex].sceneToLoad;
         SceneManager.LoadScene("Car Selection");
     }
 
