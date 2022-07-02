@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class SelectCarUIHandler : MonoBehaviour
 {
@@ -10,6 +11,13 @@ public class SelectCarUIHandler : MonoBehaviour
 
     [Header("Spawn on")]
     public Transform spawnOnTransform;
+
+    [Header("Car Stats")]
+    public Text carName;
+    public Image speed;
+    public Image acc;
+    public Image handling;
+
 
     bool isChangingCar = false;
 
@@ -100,6 +108,13 @@ public class SelectCarUIHandler : MonoBehaviour
 
         GameObject instantiatedCar = Instantiate(carPrefab, spawnOnTransform);
 
+        /*
+        CarDisplay display = GetComponent<CarDisplay>();
+        display.DisplayCar(carDatas[selectedCarIndex]);
+        */
+
+        DisplayCar(carDatas[selectedCarIndex]);
+
         carUIHandler = instantiatedCar.GetComponent<CarUIHandler>();
         carUIHandler.SetupCar(carDatas[selectedCarIndex]);
         carUIHandler.StartCarEntranceAnimation(isCarAppearingOnRightSide);
@@ -107,5 +122,14 @@ public class SelectCarUIHandler : MonoBehaviour
         yield return new WaitForSeconds(0.4f);
 
         isChangingCar = false;
+    }
+
+    public void DisplayCar(CarData cardata)
+    {
+        carName.text = cardata.carName;
+        TopDownCarController stats = cardata.CarPrefab.GetComponent<TopDownCarController>();
+        speed.fillAmount = stats.maxSpeed / 25;
+        acc.fillAmount = stats.accelerationFactor / 30;
+        handling.fillAmount = stats.turnFactor / 5;
     }
 }
