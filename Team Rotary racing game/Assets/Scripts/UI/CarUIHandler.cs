@@ -7,6 +7,24 @@ public class CarUIHandler : MonoBehaviour
 {
     [Header("Car details")]
     public Image carImage;
+    public Text carName;
+
+    [Header("Car stats")]
+    public Image carSpeed;
+
+    /*
+    [Header("Car Description")]
+    [SerializeField] private Text carName;
+    [SerializeField] private Text carDescription;
+    [SerializeField] private Text carPrice;
+    
+
+    [Header("Car Stats")]
+    [SerializeField] private Image carSpeed;
+    [SerializeField] private Image carAcceleration;
+    [SerializeField] private Image carHandling;
+
+    */
 
     //Other components
     Animator animator = null;
@@ -15,6 +33,7 @@ public class CarUIHandler : MonoBehaviour
     private void Awake()
     {
         animator = GetComponentInChildren<Animator>();
+
     }
 
     // Start is called before the first frame update
@@ -26,6 +45,11 @@ public class CarUIHandler : MonoBehaviour
     public void SetupCar(CarData carData)
     {
         carImage.sprite = carData.CarUISprite;
+
+        //carName.text = carData.carName;
+
+        //carSpeed.fillAmount = carData.speed / 100;
+
     }
 
     public void StartCarEntranceAnimation(bool isAppearingOnRightSide)
