@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class WheelTrailRendererHandler : MonoBehaviour
 {
+    public bool isOverpassEmitter = false;
+
     //Components
     TopDownCarController topDownCarController;
     TrailRenderer trailRenderer;
+    CarLayerHandler carLayerHandler;
 
     //Awake is called when the script instance is being loaded.
     void Awake()
     {
         //Get the top down car controller
         topDownCarController = GetComponentInParent<TopDownCarController>();
+
+        carLayerHandler = GetComponentInParent<CarLayerHandler>();
 
         //Get the trail renderer component.
         trailRenderer = GetComponent<TrailRenderer>();
@@ -25,10 +30,16 @@ public class WheelTrailRendererHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        trailRenderer.emitting = false;
+
         //If the car tires are screeching then we'll emitt a trail.
         if(topDownCarController.IsTireScreeching(out float lateralVelocity, out bool isBraking))
-            trailRenderer.emitting = true;
-        else trailRenderer.emitting = false;
+        {
+            if (carLayerHandler.IsDrivingOnOverpass() && isOverpassEmitter)
+                trailRenderer.emitting = true;
+            if (!carLayerHandler.IsDrivingOnOverpass() && !isOverpassEmitter)
+                trailRenderer.emitting = true;
+        }
 
     }
 }
