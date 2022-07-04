@@ -7,6 +7,7 @@ public class MapUIHandler : MonoBehaviour
 {
     [Header("Map details")]
     public Image mapImage;
+   
 
     //Other components
     Animator animator = null;
@@ -25,9 +26,10 @@ public class MapUIHandler : MonoBehaviour
 
     public void SetupMap(MapData mapData)
     {
-        //Debug.Log(mapData.MapIndex);
         mapImage.sprite = mapData.MapImage;
-        //mapImage.sprite = mapData.MapImage;
+        //map_Name.text = mapData.mapName;
+        //map_Description.text = mapData.mapDescription;
+
     }
 
     public void StartMapEntranceAnimation(bool isAppearingOnRightSide)

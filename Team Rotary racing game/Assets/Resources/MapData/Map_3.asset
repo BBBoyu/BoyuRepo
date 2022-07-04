@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ce0488cbbca341adbed1f3228c20ee0, type: 3}
-  m_Name: Map_2
+  m_Name: Map_3
   m_EditorClassIdentifier: 
-  sceneToLoad: track2
-  MapImage: {fileID: 21300000, guid: cd16dad44b6634ba1b374926d3fc542b, type: 3}
-  MapIndex: 1
-  mapName: Mud
-  mapDescription: a lot of Hairpin turns!
+  sceneToLoad: track3
+  MapImage: {fileID: 21300000, guid: d49f7de7f03d74eb5b086a9915e9499a, type: 3}
+  MapIndex: 2
+  mapName: Bridge
+  mapDescription: Do you have the precise to drive through a bridge?

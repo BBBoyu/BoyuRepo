@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class SelectMapUIHandler : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class SelectMapUIHandler : MonoBehaviour
 
     [Header("Spawn on")]
     public Transform spawnOnTransform;
+
+    public Text map_Name;
+    public Text map_Description;
 
     bool isChangingMap = false;
 
@@ -106,8 +110,8 @@ public class SelectMapUIHandler : MonoBehaviour
         GameObject instantiatedMap = Instantiate(mapPrefab, spawnOnTransform);
 
         mapUIHandler = instantiatedMap.GetComponent<MapUIHandler>();
-        
 
+        DisplayMap(mapDatas[selectedMapIndex]);
         mapUIHandler.SetupMap(mapDatas[selectedMapIndex]);
         mapUIHandler.StartMapEntranceAnimation(isCarAppearingOnRightSide);
 
@@ -116,6 +120,12 @@ public class SelectMapUIHandler : MonoBehaviour
 
 
     }
-    
-    
+
+    public void DisplayMap(MapData mapdata)
+    {
+        map_Name.text = mapdata.mapName;
+        map_Description.text = mapdata.mapDescription;
+    }
+
+
 }
