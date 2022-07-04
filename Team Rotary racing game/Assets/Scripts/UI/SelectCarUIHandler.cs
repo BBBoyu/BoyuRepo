@@ -17,6 +17,7 @@ public class SelectCarUIHandler : MonoBehaviour
     public Image speed;
     public Image acc;
     public Image handling;
+    public Text description;
 
 
     bool isChangingCar = false;
@@ -131,5 +132,6 @@ public class SelectCarUIHandler : MonoBehaviour
         speed.fillAmount = stats.maxSpeed / 25;
         acc.fillAmount = stats.accelerationFactor / 30;
         handling.fillAmount = stats.turnFactor / 5;
+        description.text = cardata.carDescription;
     }
 }

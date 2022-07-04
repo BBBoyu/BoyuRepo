@@ -12,6 +12,7 @@ public class CarData : ScriptableObject
     public Sprite CarUISprite;
     public GameObject CarPrefab;
     public string carName;
+    public string carDescription;
     /*
     public string carSpeed;
     public string carAcc;
