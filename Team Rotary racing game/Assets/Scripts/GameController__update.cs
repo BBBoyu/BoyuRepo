@@ -13,6 +13,7 @@ public class GameController__update : MonoBehaviour
     public Text LapTimeInfoText;
     public Text countdownText;
     public int countdownTime;
+    public int targetLaps = 10;
     LapManager m_LapManager;
 
     private float startTime, elapsedTime;
@@ -43,7 +44,7 @@ public class GameController__update : MonoBehaviour
         if (gamePlaying)
         {
             UpdateLapTimeInfoText();
-            if (m_LapManager.count > 10)
+            if (m_LapManager.count > targetLaps)
             {
                 EndGame();
             }
@@ -53,7 +54,7 @@ public class GameController__update : MonoBehaviour
     void UpdateLapTimeInfoText()
     {
         LapTimeInfoText.text = "Current Lap: " + SecondsToTime(m_LapManager.CurrentLapTime) + "\n"
-            + "Lap Count: " + m_LapManager.count + "/10" + "\n"
+            + "Lap Count: " + m_LapManager.count + "/" + targetLaps + "\n"
             + "Total Time: " + SecondsToTime(m_LapManager.TotalTime);
     }
 
@@ -62,7 +63,7 @@ public class GameController__update : MonoBehaviour
     {
         int Minutes = Mathf.FloorToInt(seconds / 60f);
         int Seconds = Mathf.FloorToInt(seconds % 60f);
-        int Fraction = Mathf.FloorToInt((seconds - Seconds) * 100f);
+        int Fraction = Mathf.FloorToInt((seconds - Seconds - Minutes*60) * 100f);
         return Minutes + ":" + Seconds.ToString("00") + ":" + Fraction.ToString("00");
     }
 
