@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class GameController__update : MonoBehaviour
 {
     public static GameController__update instance;
-    public GameObject hudcontainer;
+    public GameObject hudcontainer, GameOverPanel;
     public Text timeCounter;
     public Text LapTimeInfoText;
     public Text countdownText;
@@ -43,13 +43,17 @@ public class GameController__update : MonoBehaviour
         if (gamePlaying)
         {
             UpdateLapTimeInfoText();
+            if (m_LapManager.count > 10)
+            {
+                EndGame();
+            }
         }
     }
 
     void UpdateLapTimeInfoText()
     {
         LapTimeInfoText.text = "Current Lap: " + SecondsToTime(m_LapManager.CurrentLapTime) + "\n"
-            + "Lap Count: " + m_LapManager.count + "\n"
+            + "Lap Count: " + m_LapManager.count + "/10" + "\n"
             + "Total Time: " + SecondsToTime(m_LapManager.TotalTime);
     }
 
@@ -80,5 +84,24 @@ public class GameController__update : MonoBehaviour
         yield return new WaitForSeconds(1f);
 
         countdownText.gameObject.SetActive(false);
+    }
+
+    private void EndGame()
+    {
+        gamePlaying = false;
+        Invoke("ShowGameOverScreen", 0.25f);
+    }
+
+    private void ShowGameOverScreen()
+    {
+        GameOverPanel.SetActive(true);
+        hudcontainer.SetActive(false);
+        string timePlayingStr = "Total time:" + SecondsToTime(m_LapManager.TotalTime);
+        GameOverPanel.transform.Find("TimeDisplay").GetComponent<TMPro.TextMeshProUGUI>().text = timePlayingStr;
+    }
+
+    public void OnButtonLoadLevel(string levelToLoad)
+    {
+        SceneManager.LoadScene(levelToLoad);
     }
 }

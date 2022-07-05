@@ -59,6 +59,9 @@ TagManager:
   - name: RaceTrackOverpass
     uniqueID: 355458381
     locked: 0
+  - name: OverpassTrailMark
+    uniqueID: 2784234607
+    locked: 0
   - name: Smoke
     uniqueID: 2871225757
     locked: 0
