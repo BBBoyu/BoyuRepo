@@ -709,7 +709,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 7.1782303, y: 0}
+  m_Offset: {x: 8.116863, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -720,7 +720,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.2341919, y: 50}
+  m_Size: {x: 1.2051926, y: 50}
   m_EdgeRadius: 0
 --- !u!1 &202412913
 GameObject:
@@ -1492,7 +1492,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -1620,6 +1620,7 @@ MonoBehaviour:
   LapTimeInfoText: {fileID: 59244997}
   countdownText: {fileID: 796509101}
   countdownTime: 3
+  targetLaps: 10
 --- !u!1 &499445701
 GameObject:
   m_ObjectHideFlags: 0
@@ -1665,7 +1666,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -6.8458824, y: 0}
+  m_Offset: {x: -7.8180847, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1676,7 +1677,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.36706543, y: 50}
+  m_Size: {x: 0.61011505, y: 50}
   m_EdgeRadius: 0
 --- !u!1 &513126990
 GameObject:
@@ -49218,8 +49219,8 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.18039216, g: 0.7137255, b: 0.81568635, a: 1}
-    m_HighlightedColor: {r: 0.18039216, g: 0.7137255, b: 0.81568635, a: 0.8156863}
+    m_NormalColor: {r: 0.17254902, g: 0.6862745, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0.17254902, g: 0.6862745, b: 0.7843138, a: 0.8156863}
     m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
