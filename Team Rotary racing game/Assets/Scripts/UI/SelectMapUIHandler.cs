@@ -23,10 +23,9 @@ public class SelectMapUIHandler : MonoBehaviour
 
     int selectedMapIndex = 0;
 
-    //Other components
+
     MapUIHandler mapUIHandler = null;
 
-    // Start is called before the first frame update
     void Start()
     {
         //Load the car data
@@ -36,7 +35,6 @@ public class SelectMapUIHandler : MonoBehaviour
         StartCoroutine(SpawnMapCO(true));
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKey(KeyCode.LeftArrow))
@@ -115,7 +113,7 @@ public class SelectMapUIHandler : MonoBehaviour
         mapUIHandler.SetupMap(mapDatas[selectedMapIndex]);
         mapUIHandler.StartMapEntranceAnimation(isCarAppearingOnRightSide);
 
-        yield return new WaitForSeconds(0.4f);
+        yield return new WaitForSeconds(0.2f);
         isChangingMap = false;
 
 

@@ -26,10 +26,8 @@ public class SelectCarUIHandler : MonoBehaviour
 
     int selectedCarIndex = 0;
 
-    //Other components
     CarUIHandler carUIHandler = null;
 
-    // Start is called before the first frame update
     void Start()
     {
         //Load the car data
@@ -38,7 +36,6 @@ public class SelectCarUIHandler : MonoBehaviour
         StartCoroutine(SpawnCarCO(true));
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKey(KeyCode.LeftArrow))
@@ -85,10 +82,6 @@ public class SelectCarUIHandler : MonoBehaviour
     public void OnSelectCar()
     {
         PlayerPrefs.SetInt("P1SelectedCarID", carDatas[selectedCarIndex].CarUniqueID);
-        //Multiple player input selection
-        //PlayerPrefs.SetInt("P2SelectedCarID", carDatas[selectedCarIndex].CarUniqueID);
-        //PlayerPrefs.SetInt("P3SelectedCarID", carDatas[selectedCarIndex].CarUniqueID);
-        //PlayerPrefs.SetInt("P4SelectedCarID", carDatas[selectedCarIndex].CarUniqueID);
 
         PlayerPrefs.Save();
 
@@ -109,18 +102,13 @@ public class SelectCarUIHandler : MonoBehaviour
 
         GameObject instantiatedCar = Instantiate(carPrefab, spawnOnTransform);
 
-        /*
-        CarDisplay display = GetComponent<CarDisplay>();
-        display.DisplayCar(carDatas[selectedCarIndex]);
-        */
-
         DisplayCar(carDatas[selectedCarIndex]);
 
         carUIHandler = instantiatedCar.GetComponent<CarUIHandler>();
         carUIHandler.SetupCar(carDatas[selectedCarIndex]);
         carUIHandler.StartCarEntranceAnimation(isCarAppearingOnRightSide);
 
-        yield return new WaitForSeconds(0.4f);
+        yield return new WaitForSeconds(0.2f);
 
         isChangingCar = false;
     }

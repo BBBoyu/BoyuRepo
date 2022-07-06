@@ -8,8 +8,6 @@ public class MapUIHandler : MonoBehaviour
     [Header("Map details")]
     public Image mapImage;
    
-
-    //Other components
     Animator animator = null;
 
 
@@ -18,7 +16,6 @@ public class MapUIHandler : MonoBehaviour
         animator = GetComponentInChildren<Animator>();
     }
 
-    // Start is called before the first frame update
     void Start()
     {
 
@@ -27,8 +24,6 @@ public class MapUIHandler : MonoBehaviour
     public void SetupMap(MapData mapData)
     {
         mapImage.sprite = mapData.MapImage;
-        //map_Name.text = mapData.mapName;
-        //map_Description.text = mapData.mapDescription;
 
     }
 

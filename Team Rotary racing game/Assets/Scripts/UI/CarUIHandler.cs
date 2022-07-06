@@ -12,21 +12,6 @@ public class CarUIHandler : MonoBehaviour
     [Header("Car stats")]
     public Image carSpeed;
 
-    /*
-    [Header("Car Description")]
-    [SerializeField] private Text carName;
-    [SerializeField] private Text carDescription;
-    [SerializeField] private Text carPrice;
-    
-
-    [Header("Car Stats")]
-    [SerializeField] private Image carSpeed;
-    [SerializeField] private Image carAcceleration;
-    [SerializeField] private Image carHandling;
-
-    */
-
-    //Other components
     Animator animator = null;
 
 
@@ -36,7 +21,6 @@ public class CarUIHandler : MonoBehaviour
 
     }
 
-    // Start is called before the first frame update
     void Start()
     {
 
@@ -45,10 +29,6 @@ public class CarUIHandler : MonoBehaviour
     public void SetupCar(CarData carData)
     {
         carImage.sprite = carData.CarUISprite;
-
-        //carName.text = carData.carName;
-
-        //carSpeed.fillAmount = carData.speed / 100;
 
     }
 

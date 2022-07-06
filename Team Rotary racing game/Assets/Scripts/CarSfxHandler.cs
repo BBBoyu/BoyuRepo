@@ -13,12 +13,10 @@ public class CarSfxHandler : MonoBehaviour
     public AudioSource engineAudioSource;
     public AudioSource carHitAudioSource;
 
-    //Local variables
     float desiredEnginePitch = 0.5f;
     float tireScreechPitch = 0.5f;
     public float maxEnginePitch = 2f;
 
-    //Components
     TopDownCarController topDownCarController;
 
     //Awake is called when the script instance is being loaded.
