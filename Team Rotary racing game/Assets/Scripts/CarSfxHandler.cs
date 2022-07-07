@@ -40,24 +40,6 @@ public class CarSfxHandler : MonoBehaviour
         UpdateEngineSFX();
         UpdateTiresScreechingSFX();
 
-        if (PauseMenu.GameIsPaused)
-        {
-            audioMixer.SetFloat("SFXVolume", -80f);
-        }
-        else
-        {
-            //Handle SFXVolume when pause and resume
-            audioMixer.GetFloat("SFXVolume", out SFXvolume);
-            if (SFXvolume == -80f){
-                SFXvolume = tmpvolume;
-                audioMixer.SetFloat("SFXVolume", SFXvolume);
-            }
-            else
-            {
-                tmpvolume = SFXvolume;
-                audioMixer.SetFloat("SFXVolume", SFXvolume);
-            }
-        }
     }
 
     void UpdateEngineSFX()
