@@ -13,7 +13,7 @@ public class GameController__update : MonoBehaviour
     public Text LapTimeInfoText;
     public Text countdownText;
     public int countdownTime;
-    public int targetLaps = 10;
+    public int targetLaps;
     LapManager m_LapManager;
 
     private float startTime, elapsedTime;

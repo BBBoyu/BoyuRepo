@@ -14765,7 +14765,7 @@ MonoBehaviour:
   LapTimeInfoText: {fileID: 59244997}
   countdownText: {fileID: 796509101}
   countdownTime: 3
-  targetLaps: 10
+  targetLaps: 5
 --- !u!1 &499445701
 GameObject:
   m_ObjectHideFlags: 0

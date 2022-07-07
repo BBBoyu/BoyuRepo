@@ -16,6 +16,8 @@ public class CarSfxHandler : MonoBehaviour
     float desiredEnginePitch = 0.5f;
     float tireScreechPitch = 0.5f;
     public float maxEnginePitch = 2f;
+    public float SFXvolume;
+    public float tmpvolume;
 
     TopDownCarController topDownCarController;
 
@@ -44,7 +46,17 @@ public class CarSfxHandler : MonoBehaviour
         }
         else
         {
-            audioMixer.SetFloat("SFXVolume", 0f);
+            //Handle SFXVolume when pause and resume
+            audioMixer.GetFloat("SFXVolume", out SFXvolume);
+            if (SFXvolume == -80f){
+                SFXvolume = tmpvolume;
+                audioMixer.SetFloat("SFXVolume", SFXvolume);
+            }
+            else
+            {
+                tmpvolume = SFXvolume;
+                audioMixer.SetFloat("SFXVolume", SFXvolume);
+            }
         }
     }
 
