@@ -103,7 +103,7 @@ AudioMixerController:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: EngineSoundMixer
-  m_OutputGroup: {fileID: 24300002, guid: acb582ecc22cc47419e083ead4584b15, type: 2}
+  m_OutputGroup: {fileID: 0}
   m_MasterGroup: {fileID: 24300002}
   m_Snapshots:
   - {fileID: 24500006}
@@ -170,7 +170,7 @@ AudioMixerSnapshotController:
   m_SnapshotID: 90492ce61482541e2a6464ac0fdb6ccf
   m_FloatValues:
     40fa6960bd43546849b9e0938b6e0321: 0.6
-    5251131ea5d5b493b99104ce99d96b01: 0.04171297
+    5251131ea5d5b493b99104ce99d96b01: -0.19117308
   m_TransitionOverrides: {}
 --- !u!243 &3778716680657015641
 AudioMixerGroupController:
