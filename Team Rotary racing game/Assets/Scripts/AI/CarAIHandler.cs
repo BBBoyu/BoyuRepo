@@ -37,6 +37,7 @@ public class CarAIHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
     }
 
     // Update is called once per frame and is frame dependent
@@ -82,6 +83,7 @@ public class CarAIHandler : MonoBehaviour
         //Set the target on the waypoints position
         if (currentWaypoint != null)
         {
+            Debug.Log(currentWaypoint);
             //Set the target position of for the AI. 
             targetPosition = currentWaypoint.transform.position;
 
@@ -89,6 +91,7 @@ public class CarAIHandler : MonoBehaviour
             float distanceToWayPoint = (targetPosition - transform.position).magnitude;
 
             //Check if we are close enough to consider that we have reached the waypoint
+            Debug.Log(distanceToWayPoint);
             if (distanceToWayPoint <= currentWaypoint.minDistanceToReachWaypoint)
             {
                 if (currentWaypoint.maxSpeed > 0)
@@ -96,7 +99,8 @@ public class CarAIHandler : MonoBehaviour
                 else maxSpeed = 1000;
 
                 //If we are close enough then follow to the next waypoint, if there are multiple waypoints then pick one at random.
-                currentWaypoint = currentWaypoint.nextWaypointNode[Random.Range(0, currentWaypoint.nextWaypointNode.Length)];
+                //currentWaypoint = currentWaypoint.nextWaypointNode[Random.Range(0, currentWaypoint.nextWaypointNode.Length)];
+                currentWaypoint = currentWaypoint.nextWaypointNode[0];
             }
         }
     }

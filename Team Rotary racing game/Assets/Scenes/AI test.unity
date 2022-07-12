@@ -152,8 +152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bf07946cbeab4c9d813296148a3a7ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 5
-  minDistanceToReachWaypoint: 0.01
+  maxSpeed: 10
+  minDistanceToReachWaypoint: 15
   nextWaypointNode:
   - {fileID: 252568190}
 --- !u!4 &5788227
@@ -645,8 +645,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bf07946cbeab4c9d813296148a3a7ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 5
-  minDistanceToReachWaypoint: 0.01
+  maxSpeed: 15
+  minDistanceToReachWaypoint: 15
   nextWaypointNode:
   - {fileID: 1219159876}
 --- !u!1 &78225535
@@ -29235,8 +29235,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bf07946cbeab4c9d813296148a3a7ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 5
-  minDistanceToReachWaypoint: 0.01
+  maxSpeed: 15
+  minDistanceToReachWaypoint: 15
   nextWaypointNode:
   - {fileID: 337742290}
 --- !u!4 &252568191
@@ -29384,8 +29384,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bf07946cbeab4c9d813296148a3a7ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 5
-  minDistanceToReachWaypoint: 0.01
+  maxSpeed: 15
+  minDistanceToReachWaypoint: 15
   nextWaypointNode:
   - {fileID: 777336394}
 --- !u!4 &292254650
@@ -29624,8 +29624,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bf07946cbeab4c9d813296148a3a7ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 5
-  minDistanceToReachWaypoint: 0.01
+  maxSpeed: 15
+  minDistanceToReachWaypoint: 15
   nextWaypointNode:
   - {fileID: 1573039895}
 --- !u!4 &337742291
@@ -29636,7 +29636,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 337742289}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.3, y: 17.7, z: 0}
+  m_LocalPosition: {x: 18.3, y: 20.57, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -30174,8 +30174,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bf07946cbeab4c9d813296148a3a7ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 5
-  minDistanceToReachWaypoint: 0.01
+  maxSpeed: 15
+  minDistanceToReachWaypoint: 15
   nextWaypointNode:
   - {fileID: 1192347513}
 --- !u!4 &474021608
@@ -31584,8 +31584,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bf07946cbeab4c9d813296148a3a7ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 0
-  minDistanceToReachWaypoint: 0.01
+  maxSpeed: 15
+  minDistanceToReachWaypoint: 15
   nextWaypointNode:
   - {fileID: 67030292}
 --- !u!1 &796509098
@@ -31713,8 +31713,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bf07946cbeab4c9d813296148a3a7ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 5
-  minDistanceToReachWaypoint: 0.01
+  maxSpeed: 15
+  minDistanceToReachWaypoint: 15
   nextWaypointNode:
   - {fileID: 474021607}
 --- !u!4 &822598584
@@ -33161,8 +33161,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bf07946cbeab4c9d813296148a3a7ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 5
-  minDistanceToReachWaypoint: 0.01
+  maxSpeed: 15
+  minDistanceToReachWaypoint: 15
   nextWaypointNode:
   - {fileID: 1421284301}
 --- !u!4 &1192347514
@@ -61336,8 +61336,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bf07946cbeab4c9d813296148a3a7ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 5
-  minDistanceToReachWaypoint: 0.01
+  maxSpeed: 15
+  minDistanceToReachWaypoint: 15
   nextWaypointNode:
   - {fileID: 5788226}
 --- !u!4 &1219159877
@@ -62650,8 +62650,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bf07946cbeab4c9d813296148a3a7ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 5
-  minDistanceToReachWaypoint: 0.01
+  maxSpeed: 15
+  minDistanceToReachWaypoint: 15
   nextWaypointNode:
   - {fileID: 292254649}
 --- !u!1 &1450246075
@@ -63308,8 +63308,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bf07946cbeab4c9d813296148a3a7ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 5
-  minDistanceToReachWaypoint: 0.01
+  maxSpeed: 15
+  minDistanceToReachWaypoint: 15
   nextWaypointNode:
   - {fileID: 822598583}
 --- !u!4 &1573039896
@@ -65720,7 +65720,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1938069982262094494, guid: a19a3d7449cfe4db8b22a66a42901426, type: 3}
       propertyPath: maxSpeed
-      value: 1
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3592556784811165201, guid: a19a3d7449cfe4db8b22a66a42901426, type: 3}
       propertyPath: m_RootOrder
