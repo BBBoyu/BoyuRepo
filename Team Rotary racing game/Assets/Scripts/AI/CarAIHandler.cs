@@ -28,15 +28,21 @@ public class CarAIHandler : MonoBehaviour
     //Awake is called when the script instance is being loaded.
     void Awake()
     {
+        /*
         topDownCarController = GetComponent<TopDownCarController>();
         allWayPoints = FindObjectsOfType<WaypointNode>();
 
         polygonCollider2D = GetComponentInChildren<PolygonCollider2D>();
+        */
     }
 
     // Start is called before the first frame update
     void Start()
     {
+        topDownCarController = GetComponent<TopDownCarController>();
+        allWayPoints = FindObjectsOfType<WaypointNode>();
+
+        polygonCollider2D = GetComponentInChildren<PolygonCollider2D>();
 
     }
 
@@ -45,22 +51,26 @@ public class CarAIHandler : MonoBehaviour
     {
         Vector2 inputVector = Vector2.zero;
 
-        switch (aiMode)
+        if (GameController__update.instance.gamePlaying)
         {
-            case AIMode.followPlayer:
-                FollowPlayer();
-                break;
 
-            case AIMode.followWaypoints:
-                FollowWaypoints();
-                break;
+            switch (aiMode)
+            {
+                case AIMode.followPlayer:
+                    FollowPlayer();
+                    break;
+
+                case AIMode.followWaypoints:
+                    FollowWaypoints();
+                    break;
+            }
+
+            inputVector.x = TurnTowardTarget();
+            inputVector.y = ApplyThrottleOrBrake(inputVector.x);
+
+            //Send the input to the car controller.
+            topDownCarController.SetInputVector(inputVector);
         }
-
-        inputVector.x = TurnTowardTarget();
-        inputVector.y = ApplyThrottleOrBrake(inputVector.x);
-
-        //Send the input to the car controller.
-        topDownCarController.SetInputVector(inputVector);
     }
 
     //AI follows player
