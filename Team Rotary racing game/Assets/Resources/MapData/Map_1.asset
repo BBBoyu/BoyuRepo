@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ce0488cbbca341adbed1f3228c20ee0, type: 3}
   m_Name: Map_1
   m_EditorClassIdentifier: 
-  sceneToLoad: SpawnCar
+  sceneToLoad: track1
   MapImage: {fileID: 21300000, guid: 2a601d67e20f144518525355cfc67f2c, type: 3}
   MapIndex: 0
   mapName: Narrow

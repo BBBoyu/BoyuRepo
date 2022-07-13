@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ce0488cbbca341adbed1f3228c20ee0, type: 3}
   m_Name: Map_2
   m_EditorClassIdentifier: 
-  sceneToLoad: AI test
+  sceneToLoad: track2
   MapImage: {fileID: 21300000, guid: cd16dad44b6634ba1b374926d3fc542b, type: 3}
   MapIndex: 1
   mapName: Mud
