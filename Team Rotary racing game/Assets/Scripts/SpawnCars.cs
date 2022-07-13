@@ -33,6 +33,14 @@ public class SpawnCars : MonoBehaviour
                 }
             }
         }
+        if (SelectModeHandler.mode == "AIRacer")
+        {
+            GameObject[] aiPoints = GameObject.FindGameObjectsWithTag("AISpawnPoint");
+            Transform aiPoint = aiPoints[0].transform;
+            AICar[] AIdata = Resources.LoadAll<AICar>("AICar/");
+            GameObject aiCar = Instantiate(AIdata[0].CarPrefab, aiPoint.position, aiPoint.rotation);
+        }
+        
     }
 
 }

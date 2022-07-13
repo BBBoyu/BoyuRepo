@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class SelectModeHandler : MonoBehaviour
 {
-    static string mode;
+    public static string mode;
 
     public void TimeAttack() {
         mode = "TimeAttack";
@@ -15,6 +15,7 @@ public class SelectModeHandler : MonoBehaviour
 
     public void AIRacer() {
         mode = "AIRacer";
+        SceneManager.LoadScene("Track Selection");
     }
 
     public void Back()

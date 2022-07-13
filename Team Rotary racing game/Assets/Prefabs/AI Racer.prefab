@@ -4943,10 +4943,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37f20ba75afca4886821f52f5017458f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aiMode: 0
-  maxSpeed: 16
-  isAvoidingCars: 1
-  skillLevel: 1
+  aiMode: 1
+  maxSpeed: 15
 --- !u!1 &3592556785013929010
 GameObject:
   m_ObjectHideFlags: 0
