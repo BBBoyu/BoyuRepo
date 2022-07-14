@@ -44,7 +44,7 @@ public class GameController__update : MonoBehaviour
         if (gamePlaying)
         {
             UpdateLapTimeInfoText();
-            if (m_LapManager.count > targetLaps)
+            if (m_LapManager.count > targetLaps || m_LapManager.aicount > targetLaps)
             {
                 EndGame();
             }
@@ -53,10 +53,15 @@ public class GameController__update : MonoBehaviour
 
     void UpdateLapTimeInfoText()
     {
-        LapTimeInfoText.text = "Current Lap: " + SecondsToTime(m_LapManager.CurrentLapTime) + "\n"
-            + "Lap Count: " + m_LapManager.count + "/" + targetLaps + "\n"
-            + "Total Time: " + SecondsToTime(m_LapManager.TotalTime) + "\n"
-            + "AI Lap Count: " + m_LapManager.aicount + "/" + targetLaps;
+        if (m_LapManager.count <= targetLaps && m_LapManager.aicount <= targetLaps)
+        {
+            LapTimeInfoText.text = "Current Lap: " + SecondsToTime(m_LapManager.CurrentLapTime) + "\n"
+                + "Lap Count: " + m_LapManager.count + "/" + targetLaps + "\n"
+                + "Total Time: " + SecondsToTime(m_LapManager.TotalTime) + "\n"
+                + "AI Lap Count: " + m_LapManager.aicount + "/" + targetLaps;
+
+        }
+        
     }
 
 
@@ -64,7 +69,7 @@ public class GameController__update : MonoBehaviour
     {
         int Minutes = Mathf.FloorToInt(seconds / 60f);
         int Seconds = Mathf.FloorToInt(seconds % 60f);
-        int Fraction = Mathf.FloorToInt((seconds - Seconds - Minutes*60) * 100f);
+        int Fraction = Mathf.FloorToInt((seconds - Seconds - Minutes * 60) * 100f);
         return Minutes + ":" + Seconds.ToString("00") + ":" + Fraction.ToString("00");
     }
 
@@ -90,24 +95,47 @@ public class GameController__update : MonoBehaviour
 
     private void EndGame()
     {
+        Debug.Log(SelectModeHandler.mode);
+        Debug.Log(SelectModeHandler.mode == "AIRacer");
         if (SelectModeHandler.mode == "AIRacer")
         {
-            //if ()
+            gamePlaying = false;
+            Invoke("ShowGameOverScreen", 0.25f);
         }
         else
         {
             gamePlaying = false;
             Invoke("ShowGameOverScreen", 0.25f);
         }
-        
+
     }
 
     private void ShowGameOverScreen()
     {
-        GameOverPanel.SetActive(true);
-        hudcontainer.SetActive(false);
-        string timePlayingStr = "Total time:" + SecondsToTime(m_LapManager.TotalTime);
-        GameOverPanel.transform.Find("TimeDisplay").GetComponent<TMPro.TextMeshProUGUI>().text = timePlayingStr;
+        if (SelectModeHandler.mode == "TimeAttack")
+        {
+            GameOverPanel.SetActive(true);
+            hudcontainer.SetActive(false);
+            string timePlayingStr = "Total time:" + SecondsToTime(m_LapManager.TotalTime);
+            GameOverPanel.transform.Find("TimeDisplay").GetComponent<TMPro.TextMeshProUGUI>().text = timePlayingStr;
+        }
+        else if (SelectModeHandler.mode == "AIRacer")
+        {
+            GameOverPanel.SetActive(true);
+            hudcontainer.SetActive(false);
+            string result;
+            if (m_LapManager.won)
+            {
+                result = "Won";
+            } else
+            {
+                result = "Lost";
+            }
+
+            string timePlayingStr = "You have " + result;
+            GameOverPanel.transform.Find("TimeDisplay").GetComponent<TMPro.TextMeshProUGUI>().text = timePlayingStr;
+        }
+        
     }
 
     public void OnButtonLoadLevel(string levelToLoad)

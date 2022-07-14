@@ -15,6 +15,8 @@ public class LapManager : MonoBehaviour
 
     public int count = 0;
     public int aicount = 0;
+    public bool won;
+
     public float CurrentLapTime
     {
         get
@@ -178,7 +180,7 @@ public class LapManager : MonoBehaviour
         m_CurrentLapStartTime = Time.time;
         LastCheckpointIndex = 0;
         //m_StartTime = Time.time;
-
+        won = count > aicount;
         
         if (count == 1)
         {
@@ -203,8 +205,10 @@ public class LapManager : MonoBehaviour
 
         aicount++;
         aiLastCheckpointIndex = 0;
+        won = count > aicount;
         //m_StartTime = Time.time;
 
     }
+    
 
 }

@@ -1515,7 +1515,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2368806268990889351, guid: 380525423f919304983acfea90a7cd40, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2368806268990889351, guid: 380525423f919304983acfea90a7cd40, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15466,63 +15466,6 @@ MonoBehaviour:
   minDistanceToReachWaypoint: 15
   nextWaypointNode:
   - {fileID: 1662537467}
---- !u!1001 &404535077
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3592556784811165201, guid: a19a3d7449cfe4db8b22a66a42901426, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3592556784811165201, guid: a19a3d7449cfe4db8b22a66a42901426, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -28.438038
-      objectReference: {fileID: 0}
-    - target: {fileID: 3592556784811165201, guid: a19a3d7449cfe4db8b22a66a42901426, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -17.342552
-      objectReference: {fileID: 0}
-    - target: {fileID: 3592556784811165201, guid: a19a3d7449cfe4db8b22a66a42901426, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3592556784811165201, guid: a19a3d7449cfe4db8b22a66a42901426, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3592556784811165201, guid: a19a3d7449cfe4db8b22a66a42901426, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3592556784811165201, guid: a19a3d7449cfe4db8b22a66a42901426, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3592556784811165201, guid: a19a3d7449cfe4db8b22a66a42901426, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3592556784811165201, guid: a19a3d7449cfe4db8b22a66a42901426, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3592556784811165201, guid: a19a3d7449cfe4db8b22a66a42901426, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3592556784811165201, guid: a19a3d7449cfe4db8b22a66a42901426, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3592556784811165213, guid: a19a3d7449cfe4db8b22a66a42901426, type: 3}
-      propertyPath: m_Name
-      value: AI Racer
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a19a3d7449cfe4db8b22a66a42901426, type: 3}
 --- !u!1 &424882495
 GameObject:
   m_ObjectHideFlags: 0
@@ -15724,7 +15667,7 @@ RectTransform:
   - {fileID: 775035980}
   - {fileID: 1022401478}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -15815,7 +15758,7 @@ Transform:
   - {fileID: 1785732102}
   - {fileID: 1803866145}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &474399782
 MonoBehaviour:
@@ -15834,8 +15777,8 @@ MonoBehaviour:
   timeCounter: {fileID: 0}
   LapTimeInfoText: {fileID: 59244997}
   countdownText: {fileID: 796509101}
-  countdownTime: 0
-  targetLaps: 5
+  countdownTime: 3
+  targetLaps: 1
 --- !u!1 &475476898
 GameObject:
   m_ObjectHideFlags: 0
@@ -18435,7 +18378,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &993750902
 GameObject:
@@ -18900,7 +18843,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1058343436
 GameObject:
@@ -47810,7 +47753,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1218301337
 GameObject:
@@ -49155,7 +49098,7 @@ Transform:
   m_Children:
   - {fileID: 604023242}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1575701281
 GameObject:
@@ -50120,7 +50063,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: SpawnCar
+          m_StringArgument: track1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1790748286
@@ -50603,7 +50546,7 @@ RectTransform:
   - {fileID: 696939491}
   - {fileID: 1519455909}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -51259,7 +51202,7 @@ Transform:
   - {fileID: 812660907}
   - {fileID: 1180135637}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1994139920
 MonoBehaviour:
@@ -51734,7 +51677,7 @@ Transform:
   - {fileID: 1207164942}
   - {fileID: 325131013}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2142185478
 GameObject:
