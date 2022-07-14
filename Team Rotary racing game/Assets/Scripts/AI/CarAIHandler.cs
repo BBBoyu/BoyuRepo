@@ -93,7 +93,7 @@ public class CarAIHandler : MonoBehaviour
         //Set the target on the waypoints position
         if (currentWaypoint != null)
         {
-            Debug.Log(currentWaypoint);
+            //Debug.Log(currentWaypoint);
             //Set the target position of for the AI. 
             targetPosition = currentWaypoint.transform.position;
 
@@ -101,7 +101,7 @@ public class CarAIHandler : MonoBehaviour
             float distanceToWayPoint = (targetPosition - transform.position).magnitude;
 
             //Check if we are close enough to consider that we have reached the waypoint
-            Debug.Log(distanceToWayPoint);
+            //Debug.Log(distanceToWayPoint);
             if (distanceToWayPoint <= currentWaypoint.minDistanceToReachWaypoint)
             {
                 if (currentWaypoint.maxSpeed > 0)

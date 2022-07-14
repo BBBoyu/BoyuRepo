@@ -14,21 +14,24 @@ public class LapManager : MonoBehaviour
     public float SinceStartTime;
 
     public int count = 0;
+    public int aicount = 0;
     public float CurrentLapTime
     {
         get
         {
-            if (count <= 1)
-            {
-                return TotalTime;
-                //return Time.time - m_StartTime;
-            }
             
-			else if (Time.time - m_StartTime < 0)
+            if (count == 0)
             {
                 return 0f;
             }
-            
+
+            else if (count == 1)
+            {
+                //return TotalTime;
+                return Time.time - m_StartTime;
+            }
+
+
             return Time.time - m_CurrentLapStartTime;
         }
     }
@@ -55,7 +58,10 @@ public class LapManager : MonoBehaviour
     int LastCheckpointIndex = 0;
     public int CheckPointCount;
 
-    
+    int aiLastCheckpointIndex = 0;
+    public int aiCheckPointCount;
+
+
     private void Start() {
         CheckPointCount = GetCheckPointCount();
     }
@@ -115,7 +121,7 @@ public class LapManager : MonoBehaviour
             {
                 if (LastCheckpointIndex == CheckPointCount || m_IsLapStarted == false )
                 {
-                    Debug.Log("Checkpoint " + index);
+                    //Debug.Log("Checkpoint " + index);
                     OnFinishLineePassed();
                 }
             }
@@ -124,8 +130,30 @@ public class LapManager : MonoBehaviour
         {
             if (index == LastCheckpointIndex +1)
             {
-                Debug.Log("Checkpoint " + index);
+                //Debug.Log("Checkpoint " + index);
                 LastCheckpointIndex = index;
+            }
+        }
+
+    }
+
+    public void aiOnCheckpointPassed(int index)
+    {
+        if (index == 0)
+        {
+            if (aiLastCheckpointIndex == CheckPointCount || m_IsLapStarted == false)
+            {
+                //Debug.Log("Checkpoint " + index);
+                aiOnFinishLineePassed();
+            }
+        }
+
+        else
+        {
+            if (index == aiLastCheckpointIndex + 1)
+            {
+                //Debug.Log("Checkpoint " + index);
+                aiLastCheckpointIndex = index;
             }
         }
 
@@ -158,5 +186,25 @@ public class LapManager : MonoBehaviour
         }
         
     }
-    
+
+    void aiOnFinishLineePassed()
+    {
+        /*
+        if (m_IsLapStarted == true)
+        {
+            LastLaptTime = Time.time - m_CurrentLapStartTime;
+
+            if (LastLaptTime < BestLaptTime || BestLaptTime == 0f)
+            {
+                BestLaptTime = LastLaptTime;
+            }
+        }
+        */
+
+        aicount++;
+        aiLastCheckpointIndex = 0;
+        //m_StartTime = Time.time;
+
+    }
+
 }

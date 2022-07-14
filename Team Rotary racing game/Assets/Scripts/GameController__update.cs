@@ -55,7 +55,8 @@ public class GameController__update : MonoBehaviour
     {
         LapTimeInfoText.text = "Current Lap: " + SecondsToTime(m_LapManager.CurrentLapTime) + "\n"
             + "Lap Count: " + m_LapManager.count + "/" + targetLaps + "\n"
-            + "Total Time: " + SecondsToTime(m_LapManager.TotalTime);
+            + "Total Time: " + SecondsToTime(m_LapManager.TotalTime) + "\n"
+            + "AI Lap Count: " + m_LapManager.aicount + "/" + targetLaps;
     }
 
 
@@ -89,8 +90,16 @@ public class GameController__update : MonoBehaviour
 
     private void EndGame()
     {
-        gamePlaying = false;
-        Invoke("ShowGameOverScreen", 0.25f);
+        if (SelectModeHandler.mode == "AIRacer")
+        {
+            //if ()
+        }
+        else
+        {
+            gamePlaying = false;
+            Invoke("ShowGameOverScreen", 0.25f);
+        }
+        
     }
 
     private void ShowGameOverScreen()

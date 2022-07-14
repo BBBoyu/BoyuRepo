@@ -10,6 +10,8 @@ public class TopDownCarController : MonoBehaviour
     public float turnFactor = 3.5f;
     public float maxSpeed = 20;
 
+    public static bool playeractive = false;
+
     //Local variables
     float accelerationInput = 0;
     float steeringInput = 0;
@@ -117,6 +119,7 @@ public class TopDownCarController : MonoBehaviour
 
     public void SetInputVector(Vector2 inputVector)
     {
+        playeractive = true;
         steeringInput = inputVector.x;
         accelerationInput = inputVector.y;
     }

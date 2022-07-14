@@ -28,6 +28,11 @@ public class Checkpoint : MonoBehaviour
             //Debug.Log("Checkpoint " + Index);
             LapManager1.OnCheckpointPassed(Index);
         }
+        else if (otherCollider.CompareTag("AI") == true)
+        {
+            Debug.Log("Checkpoint " + Index + " " +otherCollider.tag);
+            LapManager1.aiOnCheckpointPassed(Index);
+        }
     }
 
     /*
