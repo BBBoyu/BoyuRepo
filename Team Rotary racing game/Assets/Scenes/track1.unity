@@ -666,7 +666,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bf07946cbeab4c9d813296148a3a7ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 10
+  maxSpeed: 0
   minDistanceToReachWaypoint: 15
   nextWaypointNode:
   - {fileID: 603751541}
@@ -15667,7 +15667,7 @@ RectTransform:
   - {fileID: 775035980}
   - {fileID: 1022401478}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -15735,6 +15735,7 @@ MonoBehaviour:
   SinceStartTime: 0
   count: 0
   aicount: 0
+  won: 0
   m_IsLapStarted: 0
   m_CurrentLapStartTime: 0
   CheckPointCount: 0
@@ -15758,7 +15759,7 @@ Transform:
   - {fileID: 1785732102}
   - {fileID: 1803866145}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &474399782
 MonoBehaviour:
@@ -15777,7 +15778,7 @@ MonoBehaviour:
   timeCounter: {fileID: 0}
   LapTimeInfoText: {fileID: 59244997}
   countdownText: {fileID: 796509101}
-  countdownTime: 3
+  countdownTime: 0
   targetLaps: 1
 --- !u!1 &475476898
 GameObject:
@@ -16759,6 +16760,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 648887374}
   m_CullTransparentMesh: 1
+--- !u!1001 &681456544
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3592556784811165201, guid: a19a3d7449cfe4db8b22a66a42901426, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3592556784811165201, guid: a19a3d7449cfe4db8b22a66a42901426, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -26.746447
+      objectReference: {fileID: 0}
+    - target: {fileID: 3592556784811165201, guid: a19a3d7449cfe4db8b22a66a42901426, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -17.409819
+      objectReference: {fileID: 0}
+    - target: {fileID: 3592556784811165201, guid: a19a3d7449cfe4db8b22a66a42901426, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3592556784811165201, guid: a19a3d7449cfe4db8b22a66a42901426, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3592556784811165201, guid: a19a3d7449cfe4db8b22a66a42901426, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3592556784811165201, guid: a19a3d7449cfe4db8b22a66a42901426, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3592556784811165201, guid: a19a3d7449cfe4db8b22a66a42901426, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3592556784811165201, guid: a19a3d7449cfe4db8b22a66a42901426, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3592556784811165201, guid: a19a3d7449cfe4db8b22a66a42901426, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3592556784811165201, guid: a19a3d7449cfe4db8b22a66a42901426, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3592556784811165213, guid: a19a3d7449cfe4db8b22a66a42901426, type: 3}
+      propertyPath: m_Name
+      value: AI Racer
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a19a3d7449cfe4db8b22a66a42901426, type: 3}
 --- !u!1 &692227458
 GameObject:
   m_ObjectHideFlags: 0
@@ -18378,7 +18436,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &993750902
 GameObject:
@@ -18843,7 +18901,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1058343436
 GameObject:
@@ -47753,7 +47811,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1218301337
 GameObject:
@@ -48914,7 +48972,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bf07946cbeab4c9d813296148a3a7ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 0
+  maxSpeed: 14
   minDistanceToReachWaypoint: 15
   nextWaypointNode:
   - {fileID: 1524163053}
@@ -49098,7 +49156,7 @@ Transform:
   m_Children:
   - {fileID: 604023242}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1575701281
 GameObject:
@@ -49458,7 +49516,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bf07946cbeab4c9d813296148a3a7ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 12
+  maxSpeed: 11.5
   minDistanceToReachWaypoint: 15
   nextWaypointNode:
   - {fileID: 475476899}
@@ -49878,7 +49936,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bf07946cbeab4c9d813296148a3a7ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 10
+  maxSpeed: 8
   minDistanceToReachWaypoint: 15
   nextWaypointNode:
   - {fileID: 953365293}
@@ -50546,7 +50604,7 @@ RectTransform:
   - {fileID: 696939491}
   - {fileID: 1519455909}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -51202,7 +51260,7 @@ Transform:
   - {fileID: 812660907}
   - {fileID: 1180135637}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1994139920
 MonoBehaviour:
@@ -51246,7 +51304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bf07946cbeab4c9d813296148a3a7ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 10
+  maxSpeed: 0
   minDistanceToReachWaypoint: 15
   nextWaypointNode:
   - {fileID: 1742951637}
@@ -51677,7 +51735,7 @@ Transform:
   - {fileID: 1207164942}
   - {fileID: 325131013}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2142185478
 GameObject:
