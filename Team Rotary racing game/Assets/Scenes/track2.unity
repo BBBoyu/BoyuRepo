@@ -28958,6 +28958,7 @@ GameObject:
   m_Component:
   - component: {fileID: 180826411}
   - component: {fileID: 180826412}
+  - component: {fileID: 180826413}
   m_Layer: 0
   m_Name: LeftBound
   m_TagString: Untagged
@@ -29006,6 +29007,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.2341919, y: 50}
   m_EdgeRadius: 0
+--- !u!114 &180826413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180826410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469d65811be44484eb388712f798cc09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraShake: {fileID: 1663018770}
 --- !u!1 &183978496
 GameObject:
   m_ObjectHideFlags: 0
@@ -30431,6 +30445,7 @@ MonoBehaviour:
   countdownText: {fileID: 796509101}
   countdownTime: 3
   targetLaps: 5
+  targetTime: 0
 --- !u!1 &477787940
 GameObject:
   m_ObjectHideFlags: 0
@@ -30517,6 +30532,7 @@ GameObject:
   m_Component:
   - component: {fileID: 499445702}
   - component: {fileID: 499445703}
+  - component: {fileID: 499445704}
   m_Layer: 0
   m_Name: RightBound
   m_TagString: Untagged
@@ -30565,6 +30581,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.36706543, y: 50}
   m_EdgeRadius: 0
+--- !u!114 &499445704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499445701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469d65811be44484eb388712f798cc09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraShake: {fileID: 1663018770}
 --- !u!1 &513126990
 GameObject:
   m_ObjectHideFlags: 0
@@ -30647,6 +30676,7 @@ GameObject:
   m_Component:
   - component: {fileID: 531439015}
   - component: {fileID: 531439016}
+  - component: {fileID: 531439017}
   m_Layer: 0
   m_Name: Lower
   m_TagString: Untagged
@@ -30695,6 +30725,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 90, y: 0.5}
   m_EdgeRadius: 0
+--- !u!114 &531439017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 531439014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469d65811be44484eb388712f798cc09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraShake: {fileID: 1663018770}
 --- !u!1 &591576469
 GameObject:
   m_ObjectHideFlags: 0
@@ -63222,6 +63265,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1475944233}
   - component: {fileID: 1475944234}
+  - component: {fileID: 1475944235}
   m_Layer: 0
   m_Name: Upper
   m_TagString: Untagged
@@ -63270,6 +63314,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 90, y: 0.5}
   m_EdgeRadius: 0
+--- !u!114 &1475944235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475944232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469d65811be44484eb388712f798cc09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraShake: {fileID: 1663018770}
 --- !u!1 &1515245315
 GameObject:
   m_ObjectHideFlags: 0
@@ -63752,6 +63809,7 @@ GameObject:
   - component: {fileID: 1663018765}
   - component: {fileID: 1663018768}
   - component: {fileID: 1663018769}
+  - component: {fileID: 1663018770}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -63850,6 +63908,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioObj: {fileID: 8786966685415313997, guid: 405560b6a389ea8488ad094d8249c6bf, type: 3}
+--- !u!114 &1663018770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663018764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3866b2b1b3b1f4060ae2b45134f7c613, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1721988681
 GameObject:
   m_ObjectHideFlags: 0
