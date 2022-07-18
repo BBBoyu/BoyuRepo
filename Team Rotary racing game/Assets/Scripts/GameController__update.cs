@@ -56,12 +56,24 @@ public class GameController__update : MonoBehaviour
     {
         if (SelectModeHandler.mode == "TimeAttack")
         {
+            if (SceneManager.GetActiveScene().name == "track1")
+            {
+                targetTime = 75;
+            }
+            else if (SceneManager.GetActiveScene().name == "track2")
+            {
+                targetTime = 65;
+            }
+            else if (SceneManager.GetActiveScene().name == "track3")
+            {
+                targetTime = 70;
+            }
             if (m_LapManager.count <= targetLaps)
             {
                 LapTimeInfoText.text = "Current Lap: " + SecondsToTime(m_LapManager.CurrentLapTime) + "\n"
                     + "Lap Count: " + m_LapManager.count + "/" + targetLaps + "\n"
                     + "Total Time: " + SecondsToTime(m_LapManager.TotalTime) + "\n"
-                    + "Target Time:" + targetTime;
+                    + "Target Time:" + SecondsToTime(targetTime);
 
             }
         }
@@ -135,6 +147,16 @@ public class GameController__update : MonoBehaviour
             GameOverPanel.SetActive(true);
             hudcontainer.SetActive(false);
             string timePlayingStr = "Total time:" + SecondsToTime(m_LapManager.TotalTime);
+            if (m_LapManager.TotalTime <= targetTime)
+            {
+                cheer_up = "  Congratulations!";
+                GameOverPanel.transform.Find("Message").GetComponent<TMPro.TextMeshProUGUI>().text = cheer_up;
+            }
+            else if (m_LapManager.TotalTime >= targetTime)
+            {
+                cheer_up = "Can you do better?";
+                GameOverPanel.transform.Find("Message").GetComponent<TMPro.TextMeshProUGUI>().text = cheer_up;
+            }
             GameOverPanel.transform.Find("TimeDisplay").GetComponent<TMPro.TextMeshProUGUI>().text = timePlayingStr;
         }
         else if (SelectModeHandler.mode == "AIRacer")
