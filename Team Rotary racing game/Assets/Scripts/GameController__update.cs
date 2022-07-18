@@ -14,6 +14,7 @@ public class GameController__update : MonoBehaviour
     public Text countdownText;
     public int countdownTime;
     public int targetLaps;
+    public int targetTime;
     LapManager m_LapManager;
 
     private float startTime, elapsedTime;
@@ -53,15 +54,31 @@ public class GameController__update : MonoBehaviour
 
     void UpdateLapTimeInfoText()
     {
-        if (m_LapManager.count <= targetLaps && m_LapManager.aicount <= targetLaps)
+        if (SelectModeHandler.mode == "TimeAttack")
         {
-            LapTimeInfoText.text = "Current Lap: " + SecondsToTime(m_LapManager.CurrentLapTime) + "\n"
-                + "Lap Count: " + m_LapManager.count + "/" + targetLaps + "\n"
-                + "Total Time: " + SecondsToTime(m_LapManager.TotalTime) + "\n"
-                + "AI Lap Count: " + m_LapManager.aicount + "/" + targetLaps;
+            if (m_LapManager.count <= targetLaps)
+            {
+                LapTimeInfoText.text = "Current Lap: " + SecondsToTime(m_LapManager.CurrentLapTime) + "\n"
+                    + "Lap Count: " + m_LapManager.count + "/" + targetLaps + "\n"
+                    + "Total Time: " + SecondsToTime(m_LapManager.TotalTime) + "\n"
+                    + "Target Time:" + targetTime;
 
+            }
         }
-        
+        else if (SelectModeHandler.mode == "AIRacer")
+        {
+            if (m_LapManager.count <= targetLaps && m_LapManager.aicount <= targetLaps)
+            {
+                LapTimeInfoText.text = "Current Lap: " + SecondsToTime(m_LapManager.CurrentLapTime) + "\n"
+                    + "Lap Count: " + m_LapManager.count + "/" + targetLaps + "\n"
+                    + "Total Time: " + SecondsToTime(m_LapManager.TotalTime) + "\n"
+                    + "AI Lap Count: " + m_LapManager.aicount + "/" + targetLaps;
+
+            }
+        }
+
+
+
     }
 
 
@@ -112,6 +129,7 @@ public class GameController__update : MonoBehaviour
 
     private void ShowGameOverScreen()
     {
+        string cheer_up;
         if (SelectModeHandler.mode == "TimeAttack")
         {
             GameOverPanel.SetActive(true);
@@ -123,17 +141,21 @@ public class GameController__update : MonoBehaviour
         {
             GameOverPanel.SetActive(true);
             hudcontainer.SetActive(false);
-            string result;
+            string result; 
             if (m_LapManager.won)
             {
                 result = "Won";
-            } else
+                cheer_up = "  Congratulations!";
+            } 
+            else
             {
                 result = "Lost";
+                cheer_up = "Can you do better?";
             }
 
-            string timePlayingStr = "You have " + result;
+            string timePlayingStr = "    You have " + result;
             GameOverPanel.transform.Find("TimeDisplay").GetComponent<TMPro.TextMeshProUGUI>().text = timePlayingStr;
+            GameOverPanel.transform.Find("Message").GetComponent<TMPro.TextMeshProUGUI>().text = cheer_up;
         }
         
     }

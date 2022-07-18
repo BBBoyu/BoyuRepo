@@ -30385,9 +30385,12 @@ MonoBehaviour:
   m_StartTime: 0
   SinceStartTime: 0
   count: 0
+  aicount: 0
+  won: 0
   m_IsLapStarted: 0
   m_CurrentLapStartTime: 0
   CheckPointCount: 0
+  aiCheckPointCount: 0
 --- !u!4 &474399781
 Transform:
   m_ObjectHideFlags: 0
