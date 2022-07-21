@@ -68,6 +68,11 @@ public class GameController__update : MonoBehaviour
             {
                 targetTime = 70;
             }
+
+            else if (SceneManager.GetActiveScene().name == "track3")
+            {
+                targetTime = 80;
+            }
             if (m_LapManager.count <= targetLaps)
             {
                 LapTimeInfoText.text = "Current Lap: " + SecondsToTime(m_LapManager.CurrentLapTime) + "\n"
