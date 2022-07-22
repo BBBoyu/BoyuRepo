@@ -69,7 +69,7 @@ public class GameController__update : MonoBehaviour
                 targetTime = 70;
             }
 
-            else if (SceneManager.GetActiveScene().name == "track3")
+            else if (SceneManager.GetActiveScene().name == "track4")
             {
                 targetTime = 80;
             }
