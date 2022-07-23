@@ -487,7 +487,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Current Lap:  00:00:00
+  m_Text: 'Current Lap: 00:00:00
 
     Lap Count: 0/5
 
@@ -15809,6 +15809,12 @@ MonoBehaviour:
   countdownTime: 3
   targetLaps: 5
   targetTime: 0
+  best_track1: 0
+  best_track2: 0
+  best_track3: 0
+  best_track4: 0
+  personalBest: 0
+  currentTrack: 
 --- !u!1 &475476898
 GameObject:
   m_ObjectHideFlags: 0

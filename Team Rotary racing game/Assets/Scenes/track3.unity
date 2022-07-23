@@ -618,13 +618,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Current Lap:
+  m_Text: 'Current Lap: 00:00:00
 
-    Lap Count:
+    Lap Count: 0/5
 
-    Total Time:
-
-'
+    Total Time: 00:00:00'
 --- !u!222 &59244998
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3000,6 +2998,12 @@ MonoBehaviour:
   countdownTime: 3
   targetLaps: 5
   targetTime: 0
+  best_track1: 0
+  best_track2: 0
+  best_track3: 0
+  best_track4: 0
+  personalBest: 0
+  currentTrack: 
 --- !u!1 &493955407
 GameObject:
   m_ObjectHideFlags: 0

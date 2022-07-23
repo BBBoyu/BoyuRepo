@@ -15,6 +15,12 @@ public class GameController__update : MonoBehaviour
     public int countdownTime;
     public int targetLaps;
     public int targetTime;
+    public float best_track1;
+    public float best_track2;
+    public float best_track3;
+    public float best_track4;
+    public float personalBest;
+    public float personalBestDisplay;
     LapManager m_LapManager;
 
     private float startTime, elapsedTime;
@@ -30,7 +36,16 @@ public class GameController__update : MonoBehaviour
     {
         gamePlaying = false;
 
+        best_track1 = PlayerPrefs.GetFloat("PB1", 9999);
+
+        best_track2 = PlayerPrefs.GetFloat("PB2", 9999);
+
+        best_track3 = PlayerPrefs.GetFloat("PB3", 9999);
+
+        best_track4 = PlayerPrefs.GetFloat("PB4", 9999);
+
         StartCoroutine(CountdownToStart());
+
     }
 
     private void BeginGame()
@@ -59,26 +74,39 @@ public class GameController__update : MonoBehaviour
             if (SceneManager.GetActiveScene().name == "track1")
             {
                 targetTime = 75;
+                personalBest = best_track1;
             }
             else if (SceneManager.GetActiveScene().name == "track2")
             {
                 targetTime = 65;
+                personalBest = best_track2;
             }
             else if (SceneManager.GetActiveScene().name == "track3")
             {
                 targetTime = 70;
+                personalBest = best_track3;
             }
 
             else if (SceneManager.GetActiveScene().name == "track4")
             {
                 targetTime = 80;
+                personalBest = best_track4;
+            }
+            if (personalBest == 9999)
+            {
+                personalBestDisplay = 0;
+            }
+            else
+            {
+                personalBestDisplay = personalBest;
             }
             if (m_LapManager.count <= targetLaps)
             {
                 LapTimeInfoText.text = "Current Lap: " + SecondsToTime(m_LapManager.CurrentLapTime) + "\n"
                     + "Lap Count: " + m_LapManager.count + "/" + targetLaps + "\n"
                     + "Total Time: " + SecondsToTime(m_LapManager.TotalTime) + "\n"
-                    + "Target Time:" + SecondsToTime(targetTime);
+                    + "Target Time:" + SecondsToTime(targetTime) + "\n"
+                    + "Personal Best:" + SecondsToTime(personalBestDisplay);
 
             }
         }
@@ -135,13 +163,40 @@ public class GameController__update : MonoBehaviour
         {
             gamePlaying = false;
             Invoke("ShowGameOverScreen", 0.25f);
+            SavePersonalBest();
         }
         else
         {
             gamePlaying = false;
             Invoke("ShowGameOverScreen", 0.25f);
+            SavePersonalBest();
         }
 
+    }
+
+    private void SavePersonalBest()
+    {
+        if (m_LapManager.TotalTime <= personalBest)
+        {
+            personalBest = m_LapManager.TotalTime;
+            if (SceneManager.GetActiveScene().name == "track1")
+            {
+                PlayerPrefs.SetFloat("PB1", personalBest);
+            }
+            if (SceneManager.GetActiveScene().name == "track2")
+            {
+                PlayerPrefs.SetFloat("PB2", personalBest);
+            }
+            if (SceneManager.GetActiveScene().name == "track3")
+            {
+                PlayerPrefs.SetFloat("PB3", personalBest);
+            }
+            if (SceneManager.GetActiveScene().name == "track4")
+            {
+                PlayerPrefs.SetFloat("PB4", personalBest);
+            }
+            PlayerPrefs.Save();
+        }
     }
 
     private void ShowGameOverScreen()
