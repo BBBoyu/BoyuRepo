@@ -19749,8 +19749,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bf07946cbeab4c9d813296148a3a7ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 10
-  minDistanceToReachWaypoint: 15
+  maxSpeed: 9
+  minDistanceToReachWaypoint: 14.5
   nextWaypointNode:
   - {fileID: 1435426479}
 --- !u!4 &251269063
@@ -19761,7 +19761,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 251269061}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.53, y: -6.06, z: 0}
+  m_LocalPosition: {x: 8.09, y: -4.96, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -22813,8 +22813,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bf07946cbeab4c9d813296148a3a7ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 10
-  minDistanceToReachWaypoint: 15
+  maxSpeed: 9
+  minDistanceToReachWaypoint: 14.5
   nextWaypointNode:
   - {fileID: 251269062}
 --- !u!4 &826593683
@@ -22825,7 +22825,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 826593681}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.52, y: -5.96, z: 0}
+  m_LocalPosition: {x: -1.59, y: -4.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -53799,7 +53799,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1435426478}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.3, y: -12.49, z: 0}
+  m_LocalPosition: {x: 8.93, y: -13.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -53919,7 +53919,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1464278815}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.85, y: -11.03, z: 0}
+  m_LocalPosition: {x: -2.59, y: -11.76, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

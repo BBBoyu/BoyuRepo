@@ -16,4 +16,4 @@ MonoBehaviour:
   CarUISprite: {fileID: 21300000, guid: 3da7210117c439c45912e96cbed49913, type: 3}
   CarPrefab: {fileID: 3875845376845694224, guid: 9620358e764dc4e49964c16e99fc6a56, type: 3}
   carName: Bat Mobile
-  carDescription: Becasue I'm Batman
+  carDescription: Because I'm Batman
