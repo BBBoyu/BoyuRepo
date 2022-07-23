@@ -1046,6 +1046,7 @@ GameObject:
   m_Component:
   - component: {fileID: 206931570}
   - component: {fileID: 206931571}
+  - component: {fileID: 206931572}
   m_Layer: 0
   m_Name: RoadBlocker (3)
   m_TagString: Untagged
@@ -1094,6 +1095,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.67705, y: 1.7916832}
   m_EdgeRadius: 0
+--- !u!114 &206931572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206931569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469d65811be44484eb388712f798cc09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraShake: {fileID: 1663018770}
 --- !u!1 &244867017
 GameObject:
   m_ObjectHideFlags: 0
@@ -15476,6 +15490,7 @@ GameObject:
   m_Component:
   - component: {fileID: 424882496}
   - component: {fileID: 424882497}
+  - component: {fileID: 424882498}
   m_Layer: 0
   m_Name: RoadBlocker (1)
   m_TagString: Untagged
@@ -15524,6 +15539,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 21.634659, y: 4.8695865}
   m_EdgeRadius: 0
+--- !u!114 &424882498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424882495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469d65811be44484eb388712f798cc09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraShake: {fileID: 1663018770}
 --- !u!1 &448714731
 GameObject:
   m_ObjectHideFlags: 0
@@ -16607,6 +16635,7 @@ GameObject:
   m_Component:
   - component: {fileID: 643902111}
   - component: {fileID: 643902112}
+  - component: {fileID: 643902113}
   m_Layer: 0
   m_Name: Tent
   m_TagString: Untagged
@@ -16655,6 +16684,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7.5750504, y: 8.009842}
   m_EdgeRadius: 0
+--- !u!114 &643902113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643902110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469d65811be44484eb388712f798cc09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraShake: {fileID: 1663018770}
 --- !u!1 &648887374
 GameObject:
   m_ObjectHideFlags: 0
@@ -17731,6 +17773,7 @@ GameObject:
   m_Component:
   - component: {fileID: 807527839}
   - component: {fileID: 807527840}
+  - component: {fileID: 807527841}
   m_Layer: 0
   m_Name: RoadBlocker (4)
   m_TagString: Untagged
@@ -17779,6 +17822,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.616091, y: 2.035513}
   m_EdgeRadius: 0
+--- !u!114 &807527841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807527838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469d65811be44484eb388712f798cc09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraShake: {fileID: 1663018770}
 --- !u!1 &807551254
 GameObject:
   m_ObjectHideFlags: 0
@@ -19096,6 +19152,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1088409540}
   - component: {fileID: 1088409541}
+  - component: {fileID: 1088409542}
   m_Layer: 0
   m_Name: Cones
   m_TagString: Untagged
@@ -19160,6 +19217,19 @@ PolygonCollider2D:
       - {x: -3.5941782, y: -2.0260143}
       - {x: 0.55556643, y: -2.0332534}
       - {x: 1.7564745, y: -2.0428028}
+--- !u!114 &1088409542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088409539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469d65811be44484eb388712f798cc09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraShake: {fileID: 1663018770}
 --- !u!1 &1162406032
 GameObject:
   m_ObjectHideFlags: 0
@@ -49154,6 +49224,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1575701282}
   - component: {fileID: 1575701283}
+  - component: {fileID: 1575701284}
   m_Layer: 0
   m_Name: RoadBlocker (5)
   m_TagString: Untagged
@@ -49202,6 +49273,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.616091, y: 2.035513}
   m_EdgeRadius: 0
+--- !u!114 &1575701284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575701281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469d65811be44484eb388712f798cc09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraShake: {fileID: 1663018770}
 --- !u!1 &1589919372
 GameObject:
   m_ObjectHideFlags: 0

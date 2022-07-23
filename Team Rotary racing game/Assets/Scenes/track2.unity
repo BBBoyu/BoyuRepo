@@ -316,6 +316,7 @@ GameObject:
   m_Component:
   - component: {fileID: 27432114}
   - component: {fileID: 27432115}
+  - component: {fileID: 27432116}
   m_Layer: 0
   m_Name: Circles Left
   m_TagString: Untagged
@@ -364,6 +365,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.9692669, y: 18.084282}
   m_EdgeRadius: 0
+--- !u!114 &27432116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27432113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469d65811be44484eb388712f798cc09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraShake: {fileID: 1663018770}
 --- !u!1 &39567560
 GameObject:
   m_ObjectHideFlags: 0
@@ -659,6 +673,7 @@ GameObject:
   m_Component:
   - component: {fileID: 78225536}
   - component: {fileID: 78225537}
+  - component: {fileID: 78225538}
   m_Layer: 0
   m_Name: RoadBlockRed3
   m_TagString: Untagged
@@ -707,6 +722,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.5857496, y: 1.9513416}
   m_EdgeRadius: 0
+--- !u!114 &78225538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78225535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469d65811be44484eb388712f798cc09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraShake: {fileID: 1663018770}
 --- !u!1 &88464117
 GameObject:
   m_ObjectHideFlags: 0
@@ -28459,6 +28487,7 @@ GameObject:
   m_Component:
   - component: {fileID: 131043110}
   - component: {fileID: 131043111}
+  - component: {fileID: 131043112}
   m_Layer: 0
   m_Name: Audience (1)
   m_TagString: Untagged
@@ -28507,6 +28536,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 13.730849, y: 6.8959255}
   m_EdgeRadius: 0
+--- !u!114 &131043112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 131043109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469d65811be44484eb388712f798cc09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraShake: {fileID: 1663018770}
 --- !u!1 &132027006
 GameObject:
   m_ObjectHideFlags: 0
@@ -29257,6 +29299,7 @@ GameObject:
   m_Component:
   - component: {fileID: 297515848}
   - component: {fileID: 297515849}
+  - component: {fileID: 297515850}
   m_Layer: 0
   m_Name: RoadBlockRed2
   m_TagString: Untagged
@@ -29305,6 +29348,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.5857496, y: 1.9513416}
   m_EdgeRadius: 0
+--- !u!114 &297515850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 297515847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469d65811be44484eb388712f798cc09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraShake: {fileID: 1663018770}
 --- !u!1 &321061285
 GameObject:
   m_ObjectHideFlags: 0
@@ -30532,6 +30588,7 @@ GameObject:
   m_Component:
   - component: {fileID: 591576470}
   - component: {fileID: 591576471}
+  - component: {fileID: 591576472}
   m_Layer: 0
   m_Name: Circles Mid
   m_TagString: Untagged
@@ -30580,6 +30637,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.9692669, y: 7.928028}
   m_EdgeRadius: 0
+--- !u!114 &591576472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 591576469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469d65811be44484eb388712f798cc09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraShake: {fileID: 1663018770}
 --- !u!1 &616754983
 GameObject:
   m_ObjectHideFlags: 0
@@ -30836,6 +30906,7 @@ GameObject:
   m_Component:
   - component: {fileID: 637085081}
   - component: {fileID: 637085082}
+  - component: {fileID: 637085083}
   m_Layer: 0
   m_Name: Circles Top Left
   m_TagString: Untagged
@@ -30884,6 +30955,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.2741528, y: 6.193741}
   m_EdgeRadius: 0
+--- !u!114 &637085083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637085080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469d65811be44484eb388712f798cc09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraShake: {fileID: 1663018770}
 --- !u!1 &639102797
 GameObject:
   m_ObjectHideFlags: 0
@@ -31993,6 +32077,7 @@ GameObject:
   m_Component:
   - component: {fileID: 842079674}
   - component: {fileID: 842079675}
+  - component: {fileID: 842079676}
   m_Layer: 0
   m_Name: RoadBlockRed4
   m_TagString: Untagged
@@ -32041,6 +32126,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.5857496, y: 1.9513416}
   m_EdgeRadius: 0
+--- !u!114 &842079676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842079673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469d65811be44484eb388712f798cc09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraShake: {fileID: 1663018770}
 --- !u!1 &870514667
 GameObject:
   m_ObjectHideFlags: 0
@@ -32051,6 +32149,7 @@ GameObject:
   m_Component:
   - component: {fileID: 870514668}
   - component: {fileID: 870514669}
+  - component: {fileID: 870514670}
   m_Layer: 0
   m_Name: RoadBlock
   m_TagString: Untagged
@@ -32099,6 +32198,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.5857496, y: 1.9513416}
   m_EdgeRadius: 0
+--- !u!114 &870514670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870514667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469d65811be44484eb388712f798cc09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraShake: {fileID: 1663018770}
 --- !u!1 &893831717
 GameObject:
   m_ObjectHideFlags: 0
@@ -32696,7 +32808,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1018191204}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -28.72, y: -10.03, z: 1.5045092}
+  m_LocalPosition: {x: -28, y: -10.03, z: 1.5045092}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -33076,6 +33188,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1080497133}
   - component: {fileID: 1080497134}
+  - component: {fileID: 1080497135}
   m_Layer: 0
   m_Name: RoadBlockRed
   m_TagString: Untagged
@@ -33124,6 +33237,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.5857496, y: 1.9513416}
   m_EdgeRadius: 0
+--- !u!114 &1080497135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1080497132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469d65811be44484eb388712f798cc09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraShake: {fileID: 1663018770}
 --- !u!1 &1093246004
 GameObject:
   m_ObjectHideFlags: 0
@@ -33171,6 +33297,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1173267375}
   - component: {fileID: 1173267376}
+  - component: {fileID: 1173267377}
   m_Layer: 0
   m_Name: RoadBlockRed5
   m_TagString: Untagged
@@ -33219,6 +33346,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.789009, y: 2.3578568}
   m_EdgeRadius: 0
+--- !u!114 &1173267377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173267374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469d65811be44484eb388712f798cc09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraShake: {fileID: 1663018770}
 --- !u!1 &1177271004
 GameObject:
   m_ObjectHideFlags: 0
@@ -62886,6 +63026,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1450246076}
   - component: {fileID: 1450246077}
+  - component: {fileID: 1450246078}
   m_Layer: 0
   m_Name: RightBlock
   m_TagString: Untagged
@@ -62934,6 +63075,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.5857496, y: 21.719759}
   m_EdgeRadius: 0
+--- !u!114 &1450246078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450246075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469d65811be44484eb388712f798cc09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraShake: {fileID: 1663018770}
 --- !u!1 &1465341372
 GameObject:
   m_ObjectHideFlags: 0
@@ -63573,6 +63727,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1576076069}
   - component: {fileID: 1576076070}
+  - component: {fileID: 1576076071}
   m_Layer: 0
   m_Name: Circles Bottom Right
   m_TagString: Untagged
@@ -63621,6 +63776,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7.8710938, y: 1.8813324}
   m_EdgeRadius: 0
+--- !u!114 &1576076071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576076068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469d65811be44484eb388712f798cc09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraShake: {fileID: 1663018770}
 --- !u!1 &1607645502
 GameObject:
   m_ObjectHideFlags: 0
@@ -65052,6 +65220,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1973970979}
   - component: {fileID: 1973970980}
+  - component: {fileID: 1973970981}
   m_Layer: 0
   m_Name: Audience
   m_TagString: Untagged
@@ -65100,6 +65269,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 13.730849, y: 6.8959255}
   m_EdgeRadius: 0
+--- !u!114 &1973970981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973970978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469d65811be44484eb388712f798cc09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraShake: {fileID: 1663018770}
 --- !u!1 &1978392937
 GameObject:
   m_ObjectHideFlags: 0
@@ -65495,6 +65677,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2046890637}
   - component: {fileID: 2046890638}
+  - component: {fileID: 2046890639}
   m_Layer: 0
   m_Name: RoadBlock2
   m_TagString: Untagged
@@ -65543,6 +65726,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.5857496, y: 1.9513416}
   m_EdgeRadius: 0
+--- !u!114 &2046890639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2046890636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469d65811be44484eb388712f798cc09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraShake: {fileID: 1663018770}
 --- !u!1 &2050197069
 GameObject:
   m_ObjectHideFlags: 0
@@ -66017,6 +66213,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2135886676}
   - component: {fileID: 2135886677}
+  - component: {fileID: 2135886678}
   m_Layer: 0
   m_Name: Tent
   m_TagString: Untagged
@@ -66065,3 +66262,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7.819866, y: 7.984791}
   m_EdgeRadius: 0
+--- !u!114 &2135886678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135886675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469d65811be44484eb388712f798cc09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraShake: {fileID: 1663018770}

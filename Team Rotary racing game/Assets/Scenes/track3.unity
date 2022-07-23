@@ -268,6 +268,7 @@ GameObject:
   m_Component:
   - component: {fileID: 13950666}
   - component: {fileID: 13950667}
+  - component: {fileID: 13950668}
   m_Layer: 0
   m_Name: Tree and Race Barrier (1)
   m_TagString: Untagged
@@ -316,6 +317,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 13.090546, y: 6.267229}
   m_EdgeRadius: 0
+--- !u!114 &13950668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13950665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469d65811be44484eb388712f798cc09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraShake: {fileID: 1663018770}
 --- !u!1 &15343775
 GameObject:
   m_ObjectHideFlags: 0
@@ -403,6 +417,7 @@ GameObject:
   - component: {fileID: 48931901}
   - component: {fileID: 48931903}
   - component: {fileID: 48931902}
+  - component: {fileID: 48931904}
   m_Layer: 0
   m_Name: BridgeUnderpassCollider (6)
   m_TagString: UnderpassCollider
@@ -503,6 +518,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &48931904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48931900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469d65811be44484eb388712f798cc09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraShake: {fileID: 1663018770}
 --- !u!1 &59244994
 GameObject:
   m_ObjectHideFlags: 0
@@ -1211,6 +1239,7 @@ GameObject:
   - component: {fileID: 218781787}
   - component: {fileID: 218781789}
   - component: {fileID: 218781788}
+  - component: {fileID: 218781790}
   m_Layer: 0
   m_Name: BridgeUnderpassCollider (5)
   m_TagString: Untagged
@@ -1311,6 +1340,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &218781790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218781786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469d65811be44484eb388712f798cc09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraShake: {fileID: 1663018770}
 --- !u!1 &234887070
 GameObject:
   m_ObjectHideFlags: 0
@@ -1479,6 +1521,7 @@ GameObject:
   - component: {fileID: 255982185}
   - component: {fileID: 255982187}
   - component: {fileID: 255982186}
+  - component: {fileID: 255982188}
   m_Layer: 0
   m_Name: BridgeUnderpassCollider (2)
   m_TagString: Untagged
@@ -1579,6 +1622,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &255982188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255982184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469d65811be44484eb388712f798cc09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraShake: {fileID: 1663018770}
 --- !u!1 &258251158
 GameObject:
   m_ObjectHideFlags: 0
@@ -1736,6 +1792,7 @@ GameObject:
   - component: {fileID: 275763486}
   - component: {fileID: 275763488}
   - component: {fileID: 275763487}
+  - component: {fileID: 275763489}
   m_Layer: 0
   m_Name: BridgeUnderpassCollider (7)
   m_TagString: UnderpassCollider
@@ -1836,6 +1893,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &275763489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 275763485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469d65811be44484eb388712f798cc09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraShake: {fileID: 1663018770}
 --- !u!1 &298337976
 GameObject:
   m_ObjectHideFlags: 0
@@ -2287,6 +2357,7 @@ GameObject:
   m_Component:
   - component: {fileID: 371296510}
   - component: {fileID: 371296511}
+  - component: {fileID: 371296512}
   m_Layer: 0
   m_Name: Tree and Race Barrier
   m_TagString: Untagged
@@ -2335,6 +2406,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7.294647, y: 16.910624}
   m_EdgeRadius: 0
+--- !u!114 &371296512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371296509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469d65811be44484eb388712f798cc09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraShake: {fileID: 1663018770}
 --- !u!1 &421121538
 GameObject:
   m_ObjectHideFlags: 0
@@ -3245,7 +3329,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.9918947}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3256,7 +3340,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 90, y: 0.5}
+  m_Size: {x: 90, y: 0.39558983}
   m_EdgeRadius: 0
 --- !u!114 &531439017
 MonoBehaviour:
@@ -3668,6 +3752,7 @@ GameObject:
   - component: {fileID: 602957482}
   - component: {fileID: 602957484}
   - component: {fileID: 602957483}
+  - component: {fileID: 602957485}
   m_Layer: 0
   m_Name: BridgeUnderpassCollider (4)
   m_TagString: Untagged
@@ -3768,6 +3853,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &602957485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602957481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469d65811be44484eb388712f798cc09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraShake: {fileID: 1663018770}
 --- !u!1 &611704356
 GameObject:
   m_ObjectHideFlags: 0
@@ -4217,6 +4315,7 @@ GameObject:
   m_Component:
   - component: {fileID: 755584799}
   - component: {fileID: 755584800}
+  - component: {fileID: 755584801}
   m_Layer: 0
   m_Name: Audience
   m_TagString: Untagged
@@ -4265,6 +4364,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 13.095131, y: 5.657131}
   m_EdgeRadius: 0
+--- !u!114 &755584801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755584798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469d65811be44484eb388712f798cc09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraShake: {fileID: 1663018770}
 --- !u!1 &767405404
 GameObject:
   m_ObjectHideFlags: 0
@@ -5247,6 +5359,7 @@ GameObject:
   m_Component:
   - component: {fileID: 921942911}
   - component: {fileID: 921942912}
+  - component: {fileID: 921942913}
   m_Layer: 0
   m_Name: Tires
   m_TagString: Untagged
@@ -5295,6 +5408,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.660141, y: 11.852425}
   m_EdgeRadius: 0
+--- !u!114 &921942913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921942910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469d65811be44484eb388712f798cc09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraShake: {fileID: 1663018770}
 --- !u!1 &925786938
 GameObject:
   m_ObjectHideFlags: 0
@@ -52678,6 +52804,7 @@ GameObject:
   - component: {fileID: 1356245843}
   - component: {fileID: 1356245845}
   - component: {fileID: 1356245844}
+  - component: {fileID: 1356245846}
   m_Layer: 0
   m_Name: BridgeOverpassCollider (1)
   m_TagString: OverpassCollider
@@ -52778,6 +52905,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1356245846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356245842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469d65811be44484eb388712f798cc09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraShake: {fileID: 1663018770}
 --- !u!1001 &1403192723
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54252,7 +54392,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.92549026, g: 0.86274517, b: 0.72156864, a: 0}
+  m_BackGroundColor: {r: 0.73333335, g: 0.5019608, b: 0.26666668, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -54269,7 +54409,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 18.901316
+  orthographic size: 20.787134
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -55673,6 +55813,7 @@ GameObject:
   - component: {fileID: 1890802384}
   - component: {fileID: 1890802386}
   - component: {fileID: 1890802385}
+  - component: {fileID: 1890802387}
   m_Layer: 0
   m_Name: BridgeOverpassCollider
   m_TagString: OverpassCollider
@@ -55773,6 +55914,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1890802387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890802383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469d65811be44484eb388712f798cc09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraShake: {fileID: 1663018770}
 --- !u!1 &1903477638
 GameObject:
   m_ObjectHideFlags: 0
@@ -57208,6 +57362,7 @@ GameObject:
   - component: {fileID: 2137245122}
   - component: {fileID: 2137245124}
   - component: {fileID: 2137245123}
+  - component: {fileID: 2137245125}
   m_Layer: 0
   m_Name: BridgeUnderpassCollider (3)
   m_TagString: Untagged
@@ -57308,3 +57463,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2137245125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2137245121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469d65811be44484eb388712f798cc09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraShake: {fileID: 1663018770}
