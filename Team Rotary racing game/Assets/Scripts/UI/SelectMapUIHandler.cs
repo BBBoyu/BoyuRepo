@@ -12,8 +12,8 @@ public class SelectMapUIHandler : MonoBehaviour
     [Header("Spawn on")]
     public Transform spawnOnTransform;
 
-    public Text map_Name;
-    public Text map_Description;
+    public Text mapName;
+    public Text mapDescription;
 
     bool isChangingMap = false;
 
@@ -121,8 +121,8 @@ public class SelectMapUIHandler : MonoBehaviour
 
     public void DisplayMap(MapData mapdata)
     {
-        map_Name.text = mapdata.mapName;
-        map_Description.text = mapdata.mapDescription;
+        mapName.text = mapdata.mapName;
+        mapDescription.text = mapdata.mapDescription;
     }
 
 

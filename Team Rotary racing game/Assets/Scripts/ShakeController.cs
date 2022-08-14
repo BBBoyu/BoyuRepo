@@ -9,7 +9,6 @@ public class ShakeController : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision2D)
     {
-        //Get the relative velocity of the collision
         float relativeVelocity = collision2D.relativeVelocity.magnitude;
 
         float volume = relativeVelocity * 0.1f;

@@ -12,7 +12,6 @@ public class CarLayerHandler : MonoBehaviour
     Collider2D carCollider;
 
     bool isDrivingOnOverpass = false;
-    // Start is called before the first frame update
 
     private void Awake()
     {

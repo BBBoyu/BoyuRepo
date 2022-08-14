@@ -7,11 +7,8 @@ public class CarInputHandler : MonoBehaviour
     TopDownCarController CarController;
     public int playerNumber = 1;
 
-    //Awake as soon as loaded
-
     void Awake()
     {
-        //CarController = GetComponent<TopDownCarController>();
     }
     
 
@@ -20,7 +17,6 @@ public class CarInputHandler : MonoBehaviour
         CarController = GetComponent<TopDownCarController>();
     }
 
-    // Updated every frame
     void Update()
     {
 
@@ -28,11 +24,9 @@ public class CarInputHandler : MonoBehaviour
         {
             Vector2 inputVector = Vector2.zero;
 
-            //Get input from Unity's input system.
             inputVector.x = Input.GetAxis("Horizontal");
             inputVector.y = Input.GetAxis("Vertical");
 
-            //Send the input to the car controller.
             CarController.SetInputVector(inputVector);
         }
         else

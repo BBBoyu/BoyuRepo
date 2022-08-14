@@ -7,11 +7,11 @@ public class LapManagerUI : MonoBehaviour
 {
     public Text LapTimeInfoText;
 
-    LapManager m_LapManager;
+    LapManager lapManager;
 
     private void Awake()
     {
-        m_LapManager = GetComponent<LapManager>();
+        lapManager = GetComponent<LapManager>();
     }
 
     void Update()
@@ -21,12 +21,8 @@ public class LapManagerUI : MonoBehaviour
 
     void UpdateLapTimeInfoText()
     {
-        LapTimeInfoText.text = "Current Lap: " + SecondsToTime(m_LapManager.CurrentLapTime) + "\n"
-            + "Total Time: " + SecondsToTime(m_LapManager.TotalTime);
-
-        //LapTimeInfoText.text = "Current Lap: " + SecondsToTime(m_LapManager.CurrentLapTime) + "\n"
-        //+ "Last Lap: " + SecondsToTime(m_LapManager.LastLaptTime) + "\n"
-        //+ "Best Lap: " + SecondsToTime(m_LapManager.BestLaptTime) + "";
+        LapTimeInfoText.text = "Current Lap: " + SecondsToTime(lapManager.CurrentLapTime) + "\n"
+            + "Total Time: " + SecondsToTime(lapManager.TotalTime);
     }
 
     string SecondsToTime(float seconds)

@@ -6,18 +6,17 @@ public class Checkpoint : MonoBehaviour
 {
     public int Index;
 
-    // Start is called before the first frame update
     void Start()
     {
         
     }
 
 
-    LapManager LapManager1;
+    LapManager lapManager;
 
     private void Awake()
     {
-        LapManager1 = GetComponentInParent<LapManager>();
+        lapManager = GetComponentInParent<LapManager>();
     }
 
 
@@ -25,23 +24,13 @@ public class Checkpoint : MonoBehaviour
     {
         if (otherCollider.CompareTag("Car") == true)
         {
-            //Debug.Log("Checkpoint " + Index);
-            LapManager1.OnCheckpointPassed(Index);
+            lapManager.OnCheckpointPassed(Index);
         }
         else if (otherCollider.CompareTag("AI") == true)
         {
             Debug.Log("Checkpoint " + Index + " " +otherCollider.tag);
-            LapManager1.aiOnCheckpointPassed(Index);
+            lapManager.aiOnCheckpointPassed(Index);
         }
     }
 
-    /*
-    private void Update()
-    {
-        if (PauseMenu.GameIsPaused)
-        {
-            //m_CurrentLapStartTime -= Time.deltaTime;
-        }
-    }
-    */
 }

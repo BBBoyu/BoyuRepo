@@ -13,7 +13,6 @@ public class DrawPathHandler : MonoBehaviour
 
     WaypointNode[] waypointNodes;
 
-    // Start is called before the first frame update
     void Start()
     {
  
@@ -26,10 +25,8 @@ public class DrawPathHandler : MonoBehaviour
         if (transformRootObject == null)
             return;
 
-        //Get all Waypoints
         waypointNodes = transformRootObject.GetComponentsInChildren<WaypointNode>();
 
-        //Iterate the list
         foreach (WaypointNode waypoint in waypointNodes)
         {
        

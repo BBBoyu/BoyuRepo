@@ -41,7 +41,7 @@ public class MapUIHandler : MonoBehaviour
         else animator.Play("MapUI to left");
     }
 
-    //Events
+
     public void OnMapExitAnimationCompleted()
     {
         Destroy(gameObject);

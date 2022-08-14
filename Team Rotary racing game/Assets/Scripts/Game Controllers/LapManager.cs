@@ -7,10 +7,10 @@ public class LapManager : MonoBehaviour
 
     private void Awake()
     {
-        m_StartTime = Time.timeSinceLevelLoad + 3;
+        startTime = Time.timeSinceLevelLoad + 3;
     }
 
-    public float m_StartTime;
+    public float startTime;
     public float SinceStartTime;
 
     public int count = 0;
@@ -30,7 +30,7 @@ public class LapManager : MonoBehaviour
             else if (count == 1)
             {
                 //return TotalTime;
-                return Time.time - m_StartTime;
+                return Time.time - startTime;
             }
 
 
@@ -46,17 +46,14 @@ public class LapManager : MonoBehaviour
             {
                 return 0f;
             }
-           return Time.time - m_StartTime;
+           return Time.time - startTime;
         }
     }
 
-    //public float LastLaptTime { get; private set; }
-    //public float BestLaptTime { get; private set; }
 
 
     public bool m_IsLapStarted = false;
     public float m_CurrentLapStartTime;
-    //public float m_StartTime = Time.timeSinceLevelLoad;
     int LastCheckpointIndex = 0;
     public int CheckPointCount;
 
@@ -80,32 +77,6 @@ public class LapManager : MonoBehaviour
         return checkpointcount;
     }
     
-
-    /*
-    void OnTriggerEnter2D(Collider2D otherCollider)
-    {
-        if (otherCollider.CompareTag("Car") == true)
-        {
-            if (m_IsLapStarted == true)
-            {
-                LastLaptTime = Time.time - m_CurrentLapStartTime;
-
-                if (LastLaptTime < BestLaptTime || BestLaptTime == 0f)
-                {
-                    BestLaptTime = LastLaptTime;
-                }
-            }
-        }
-        count++;
-        m_IsLapStarted = true;
-        m_CurrentLapStartTime = Time.time;
-
-        if (count == 1)
-        {
-            m_StartTime = Time.time;
-        }
-    }
-    */
 
     void Update()
     {
@@ -163,50 +134,26 @@ public class LapManager : MonoBehaviour
 
     void OnFinishLineePassed()
     {
-        /*
-        if (m_IsLapStarted == true)
-        {
-            LastLaptTime = Time.time - m_CurrentLapStartTime;
-
-            if (LastLaptTime < BestLaptTime || BestLaptTime == 0f)
-            {
-                BestLaptTime = LastLaptTime;
-            }
-        }
-        */
 
         count++;
         m_IsLapStarted = true;
         m_CurrentLapStartTime = Time.time;
         LastCheckpointIndex = 0;
-        //m_StartTime = Time.time;
         won = count > aicount;
         
         if (count == 1)
         {
-            m_StartTime = Time.time;
+            startTime = Time.time;
         }
         
     }
 
     void aiOnFinishLineePassed()
     {
-        /*
-        if (m_IsLapStarted == true)
-        {
-            LastLaptTime = Time.time - m_CurrentLapStartTime;
-
-            if (LastLaptTime < BestLaptTime || BestLaptTime == 0f)
-            {
-                BestLaptTime = LastLaptTime;
-            }
-        }
-        */
 
         aicount++;
         aiLastCheckpointIndex = 0;
         won = count > aicount;
-        //m_StartTime = Time.time;
 
     }
     

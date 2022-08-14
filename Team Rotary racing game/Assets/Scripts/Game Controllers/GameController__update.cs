@@ -21,7 +21,7 @@ public class GameController__update : MonoBehaviour
     public float best_track4;
     public float personalBest;
     public float personalBestDisplay;
-    LapManager m_LapManager;
+    LapManager lapManager;
 
     private float startTime, elapsedTime;
     public bool gamePlaying { get; private set; }
@@ -31,7 +31,6 @@ public class GameController__update : MonoBehaviour
     {
         instance = this;
     }
-    // Start is called before the first frame update
     private void Start()
     {
         gamePlaying = false;
@@ -51,16 +50,15 @@ public class GameController__update : MonoBehaviour
     private void BeginGame()
     {
         gamePlaying = true;
-        m_LapManager = GetComponent<LapManager>();
+        lapManager = GetComponent<LapManager>();
     }
 
-    // Update is called once per frame
     private void Update()
     {
         if (gamePlaying)
         {
             UpdateLapTimeInfoText();
-            if (m_LapManager.count > targetLaps || m_LapManager.aicount > targetLaps)
+            if (lapManager.count > targetLaps || lapManager.aicount > targetLaps)
             {
                 EndGame();
             }
@@ -100,11 +98,11 @@ public class GameController__update : MonoBehaviour
             {
                 personalBestDisplay = personalBest;
             }
-            if (m_LapManager.count <= targetLaps)
+            if (lapManager.count <= targetLaps)
             {
-                LapTimeInfoText.text = "Current Lap: " + SecondsToTime(m_LapManager.CurrentLapTime) + "\n"
-                    + "Lap Count: " + m_LapManager.count + "/" + targetLaps + "\n"
-                    + "Total Time: " + SecondsToTime(m_LapManager.TotalTime) + "\n"
+                LapTimeInfoText.text = "Current Lap: " + SecondsToTime(lapManager.CurrentLapTime) + "\n"
+                    + "Lap Count: " + lapManager.count + "/" + targetLaps + "\n"
+                    + "Total Time: " + SecondsToTime(lapManager.TotalTime) + "\n"
                     + "Target Time:" + SecondsToTime(targetTime) + "\n"
                     + "Personal Best:" + SecondsToTime(personalBestDisplay);
 
@@ -112,12 +110,12 @@ public class GameController__update : MonoBehaviour
         }
         else if (SelectModeHandler.mode == "AIRacer")
         {
-            if (m_LapManager.count <= targetLaps && m_LapManager.aicount <= targetLaps)
+            if (lapManager.count <= targetLaps && lapManager.aicount <= targetLaps)
             {
-                LapTimeInfoText.text = "Current Lap: " + SecondsToTime(m_LapManager.CurrentLapTime) + "\n"
-                    + "Lap Count: " + m_LapManager.count + "/" + targetLaps + "\n"
-                    + "Total Time: " + SecondsToTime(m_LapManager.TotalTime) + "\n"
-                    + "AI Lap Count: " + m_LapManager.aicount + "/" + targetLaps;
+                LapTimeInfoText.text = "Current Lap: " + SecondsToTime(lapManager.CurrentLapTime) + "\n"
+                    + "Lap Count: " + lapManager.count + "/" + targetLaps + "\n"
+                    + "Total Time: " + SecondsToTime(lapManager.TotalTime) + "\n"
+                    + "AI Lap Count: " + lapManager.aicount + "/" + targetLaps;
 
             }
         }
@@ -176,9 +174,9 @@ public class GameController__update : MonoBehaviour
 
     private void SavePersonalBest()
     {
-        if (m_LapManager.TotalTime <= personalBest)
+        if (lapManager.TotalTime <= personalBest)
         {
-            personalBest = m_LapManager.TotalTime;
+            personalBest = lapManager.TotalTime;
             if (SceneManager.GetActiveScene().name == "track1")
             {
                 PlayerPrefs.SetFloat("PB1", personalBest);
@@ -206,13 +204,13 @@ public class GameController__update : MonoBehaviour
         {
             GameOverPanel.SetActive(true);
             hudcontainer.SetActive(false);
-            string timePlayingStr = "Total time:" + SecondsToTime(m_LapManager.TotalTime);
-            if (m_LapManager.TotalTime <= targetTime)
+            string timePlayingStr = "Total time:" + SecondsToTime(lapManager.TotalTime);
+            if (lapManager.TotalTime <= targetTime)
             {
                 cheer_up = "  Congratulations!";
                 GameOverPanel.transform.Find("Message").GetComponent<TMPro.TextMeshProUGUI>().text = cheer_up;
             }
-            else if (m_LapManager.TotalTime >= targetTime)
+            else if (lapManager.TotalTime >= targetTime)
             {
                 cheer_up = "Can you do better?";
                 GameOverPanel.transform.Find("Message").GetComponent<TMPro.TextMeshProUGUI>().text = cheer_up;
@@ -224,7 +222,7 @@ public class GameController__update : MonoBehaviour
             GameOverPanel.SetActive(true);
             hudcontainer.SetActive(false);
             string result; 
-            if (m_LapManager.won)
+            if (lapManager.won)
             {
                 result = "Won";
                 cheer_up = "  Congratulations!";
